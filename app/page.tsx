@@ -165,7 +165,7 @@ export default function ScrollytellingComponent() {
               </div>
             </header>
 
-            {sections.map((section, index) => (
+            {sections.map((section) => (
               <div 
                 key={section.id}
                 id={`section${section.id}`} 
