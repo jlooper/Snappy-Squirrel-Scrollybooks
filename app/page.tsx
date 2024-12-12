@@ -8,21 +8,37 @@ type Section = {
   header: string;
 };
 
-export default function Home() {
-  const sectionsRef = useRef<HTMLDivElement[]>([]);
-  const [activeSection, setActiveSection] = useState(0);
+// Create an interface that extends HTMLElement with the align property
+interface ElementWithAlign extends HTMLElement {
+  align?: string;
+}
 
-  
+export default function Home() {
+  // Initialize refs with an array of the correct length
+  const sectionsRef = useRef<(ElementWithAlign | null)[]>([]);
+  const [activeSection, setActiveSection] = useState(0);
+  // Initialize the refs array when the component mounts
+  useEffect(() => {
+    sectionsRef.current = sectionsRef.current.slice(0, sections.length);
+  }, []);
 
   const goToNextSection = () => {
     if (activeSection < sections.length - 1) {
-      sectionsRef.current[activeSection + 1]?.scrollIntoView({ behavior: 'smooth' });
+      const nextSection = sectionsRef.current[activeSection + 1];
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+        setActiveSection(activeSection + 1);
+      }
     }
   };
 
   const goToPreviousSection = () => {
     if (activeSection > 0) {
-      sectionsRef.current[activeSection - 1]?.scrollIntoView({ behavior: 'smooth' });
+      const prevSection = sectionsRef.current[activeSection - 1];
+      if (prevSection) {
+        prevSection.scrollIntoView({ behavior: 'smooth' });
+        setActiveSection(activeSection - 1);
+      }
     }
   };
 
@@ -123,7 +139,7 @@ useEffect(() => {
       {/* Background SVG */}
       <div 
         className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-10"
-        style={{ backgroundImage: 'url(/background.svg)' }}
+        style={{ backgroundImage: 'url(/bg.svg)' }}
       />
 
       {/* Sticky Header with arrows */}
@@ -197,13 +213,11 @@ useEffect(() => {
 
       {/* Main scrolling content area */}
       <main className="relative w-full pt-32 z-10">
-        {sections.map((section, index) => (
+          {sections.map((section, index) => (
           <section
             key={section.id}
             ref={(el) => {
-              if (el instanceof HTMLDivElement) {
-                sectionsRef.current[index] = el;
-              }
+              sectionsRef.current[index] = el; // Directly assign the element
             }}
             className="min-h-screen py-16 opacity-0 translate-y-10 transition-all duration-700"
           >
