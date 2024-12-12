@@ -25,3 +25,217 @@ body {
   background-attachment: fixed; /* This keeps the background fixed while scrolling */
 }
 
+/* Base layout */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main site header */
+.main-header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.main-nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-links a {
+  text-decoration: none;
+}
+
+/* Content area */
+.content-wrapper {
+  margin-top: 60px; /* Account for main header */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Story header */
+.story-header {
+  height: 60px;
+  position: sticky;
+  top: 0px; /* Stick below main header */
+  left: 0;
+  right: 0;
+  z-index: 900;
+}
+
+.story-nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Scroll area */
+.scroll-wrapper {
+  display: flex;
+  height: calc(100vh); /* Subtract only main header height */
+  overflow: hidden;
+}
+
+.scroll-fixed {
+  flex: 0 0 50%;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+}
+
+.graphic-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.graphic-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.graphic-image.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.graphic-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroll-content {
+  flex: 0 0 50%;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-text {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-text.is-active {
+  opacity: 1;
+}
+
+/* Navigation Controls */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.nav-button:hover:not(.disabled) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.section-indicator {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  min-width: 3rem;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .story-nav {
+    padding: 0 1rem;
+  }
+
+  .scroll-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .scroll-fixed {
+    height: 50vh;
+    position: sticky;
+    top: 60px; /* Stick below main header */
+    width: 100%;
+  }
+
+  .scroll-content {
+    width: 100%;
+  }
+
+  .scroll-text {
+    min-height: 50vh;
+    padding: 2rem 1rem;
+  }
+
+  .story-header {
+    top: 60px; /* Maintain position below main header on mobile */
+  }
+}
