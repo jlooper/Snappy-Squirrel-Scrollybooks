@@ -31,37 +31,37 @@ export default function Home() {
       id: 1,
       header: "Snappy and the Nuts",
       content: "Snappy was a busy, happy squirrel.  All day long in the fall he searched through the leaves on the forest floor for tasty nuts to store for the long winter.  He squeaked with excitement each time he found a nut and quickly buried it where he was sure he’d find it in the coming months.  He had to hide them because other animals wanted to eat them, too.",
-      imageUrl: "/1.png",
+      imageUrl: "/1/1.png",
     },
     {
       id: 2,
       header: "The Nuts",
       content: "Sometimes the Deer brothers trampled them and broke the nut shells. Often the naughty Chipmunk family stole them. Sometimes, Snappy couldn’t quite remember where he put the piles of nuts.  Snappy had been working for a long time and had saved many nuts.  They would taste so good all winter when the ground is covered with snow.",
-      imageUrl: "/1.png",
+      imageUrl: "/1/1.png",
     },
     {
       id: 3,
       header: "Auntie Pip",
       content: "Snappy thought for a long time about the best place to store them safely where no one could break or steal the nuts. Finally he smiled happily, thinking: “I'll ask Auntie Pip. She knows all kinds of interesting things.”",
-      imageUrl: "/1.png",
+      imageUrl: "/1/1.png",
     },
     {
       id: 4,
       header: "Owl's Forest Bank",
       content: "Auntie Pip told Snappy that the forest has lots of good places to store his property. “If you want them back within the next year or so, they'll have to be where we can find them easily but will be held safe from other Forest creatures.”",
-      imageUrl: "/1.png",
+      imageUrl: "/1/1.png",
     },
     {
       id: 5,
       header: "A Safe Box",
       content: "“I'd suggest Owl's Forest Bank. You can put them in his safe box where he can watch them all the time. Lots of animals store their things with Owl. He is awake all night and during the day he has several salamanders who watch what is held in the bank.”",
-      imageUrl: "/1.png",
+      imageUrl: "/1/1.png",
     },
     {
       id: 6,
       header: "Mr. Fox",
       content: "Mr. Fox, who always seemed interested in other peoples’ business, ambled over to Snappy and Auntie Pip. “I have a bank as well, much better than Owl’s. It’s called ‘Fox’s Friends’ Bank.’ I will give you three pine nuts for every acorn that you deposit in my bank.”",
-      imageUrl: "/1.png",
+      imageUrl: "/1/1.png",
     }
   ];
 
@@ -97,7 +97,7 @@ useEffect(() => {
 }, []);
 
   const renderSection = (section: Section, index: number) => {
-   
+    console.log(`Item at index ${index}`);
         return (
           <div className="space-y-3">
           <h2 className="text-5xl font-bold">{section.header}</h2>
@@ -105,7 +105,7 @@ useEffect(() => {
               {section.imageUrl && (
                 <img 
                   src={section.imageUrl} 
-                  alt={section.title}
+                  alt={section.header}
                   className="w-full h-full object-cover"
                 />
               )}
@@ -200,7 +200,11 @@ useEffect(() => {
         {sections.map((section, index) => (
           <section
             key={section.id}
-            ref={(el) => (sectionsRef.current[index] = el!)}
+            ref={(el) => {
+              if (el instanceof HTMLDivElement) {
+                sectionsRef.current[index] = el;
+              }
+            }}
             className="min-h-screen py-16 opacity-0 translate-y-10 transition-all duration-700"
           >
             <div className="sticky pt-20 w-full max-w-4xl mx-auto px-8">
