@@ -99,7 +99,7 @@ export default function ScrollytellingComponent() {
   return (
     <div className="page-wrapper">
       <header className="main-header">
-        <nav className="main-nav">
+        <nav className="main-nav bg-green-800">
           <div className="logo">Snappy Squirrel ScrollyBooks</div>
           <ul className="main-nav-links">
             <li><a href="#">Home</a></li>

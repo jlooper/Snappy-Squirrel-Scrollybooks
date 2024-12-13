@@ -43,8 +43,8 @@ body {
 }
 
 .main-nav {
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
   padding: 0 2rem;
   height: 100%;
   display: flex;
@@ -100,7 +100,7 @@ body {
 /* Scroll area */
 .scroll-wrapper {
   display: flex;
-  height: calc(100vh); /* Subtract only main header height */
+  height: calc(100vh - 60px); /* Subtract only main header height */
   overflow: hidden;
 }
 
@@ -203,7 +203,7 @@ body {
 .section-indicator {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #666;
+  color: #fff;
   min-width: 3rem;
   text-align: center;
 }
