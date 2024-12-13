@@ -151,9 +151,10 @@ body {
 .scroll-text {
   min-height: 100vh;
   padding: 2rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   opacity: 0.3;
   transition: opacity 0.3s ease;
 }

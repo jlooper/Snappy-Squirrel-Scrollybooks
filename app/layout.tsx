@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={`${font.variable} antialiased`}
       >
-       <div className="bg-green-800 overflow-auto">
+       <div className="overflow-auto">
           {children}
         </div>
       </body>
