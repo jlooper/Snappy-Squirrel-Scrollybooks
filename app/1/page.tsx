@@ -36,23 +36,7 @@ export default function ScrollytellingComponent() {
     }
   ];
 
-  const goToPreviousSection = () => {
-    if (activeSection > 0) {
-      const newSection = activeSection - 1;
-      setActiveSection(newSection);
-      const element = document.querySelector(`#section${sections[newSection].id}`);
-      element?.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
-  const goToNextSection = () => {
-    if (activeSection < sections.length - 1) {
-      const newSection = activeSection + 1;
-      setActiveSection(newSection);
-      const element = document.querySelector(`#section${sections[newSection].id}`);
-      element?.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   useEffect(() => {
     const scroller = scrollama();
@@ -84,18 +68,7 @@ export default function ScrollytellingComponent() {
     return () => scroller.destroy();
   }, []);
 
-  useEffect(() => {
-    const handleKeyPress = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
-        goToPreviousSection();
-      } else if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
-        goToNextSection();
-      }
-    };
 
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [activeSection]);
 
   return (
     <div className="page-wrapper">
@@ -139,31 +112,13 @@ export default function ScrollytellingComponent() {
               <div className="story-nav">
                 <h1 className="story-title">Snappy and the Nuts</h1>
                 <div className="nav-controls">
-                  <button
-                    onClick={goToPreviousSection}
-                    disabled={activeSection === 0}
-                    className={`nav-button ${activeSection === 0 ? 'disabled' : ''}`}
-                    aria-label="Previous section"
-                  >
-                    <svg viewBox="0 0 24 24" className="w-6 h-6">
-                      <path d="M15.75 19.5L8.25 12l7.5-7.5" />
-                    </svg>
-                  </button>
+             
 
                   <span className="section-indicator">
                     {activeSection + 1} / {sections.length}
                   </span>
 
-                  <button
-                    onClick={goToNextSection}
-                    disabled={activeSection === sections.length - 1}
-                    className={`nav-button ${activeSection === sections.length - 1 ? 'disabled' : ''}`}
-                    aria-label="Next section"
-                  >
-                    <svg viewBox="0 0 24 24" className="w-6 h-6">
-                      <path d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                  </button>
+              
                 </div>
               </div>
             </header>

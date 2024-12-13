@@ -149,6 +149,7 @@ body {
 }
 
 .scroll-text {
+  min-height: 100vh;
   padding: 2rem;
   margin: 2rem;
   display: flex;
