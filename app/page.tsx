@@ -54,13 +54,13 @@ export default function HomeComponent() {
       id: 4,
       header: "Snappy Loses",
       content: "A risky investment",
-      imageUrl: "3.png",
+      imageUrl: "0.png",
     },
     {
       id: 5,
       header: "Snappy Buys a Bond",
       content: "A safer way to invest",
-      imageUrl: "0.png",
+      imageUrl: "1.png",
     }
   ];
 

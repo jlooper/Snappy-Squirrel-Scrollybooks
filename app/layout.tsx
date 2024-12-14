@@ -26,12 +26,13 @@ export default function RootLayout({
        <div className="overflow-auto">
        <header className="main-header">
         <nav className="main-nav bg-green-800">
-          <div className="logo">Snappy Squirrel ScrollyBooks</div>
+          <div className="logo"><Link href="/">Snappy Squirrel ScrollyBooks</Link></div>
           <ul className="main-nav-links">
           <ul className="main-nav-links">
-            <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/games">Games</Link></li>
+            <li><Link href="/parents">Parent Corner</Link></li>
           </ul>
           </ul>
         </nav>
