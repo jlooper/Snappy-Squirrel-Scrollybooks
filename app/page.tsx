@@ -40,7 +40,7 @@ export default function HomeComponent() {
     },
     {
       id: 2,
-      header: "Snappy Needs a Next",
+      header: "Snappy Needs a Nest",
       content: "Snappy needs a warm home!",
       imageUrl: "1.png",
     },
