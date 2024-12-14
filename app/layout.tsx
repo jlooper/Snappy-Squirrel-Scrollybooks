@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Playwrite_FR_Moderne } from "next/font/google";
-import Link from "next/link";
+import Navigation from "@/components/Navigation";
 import "./globals.css";
 
 const font = Playwrite_FR_Moderne({
   variable: "--font"
 });
-
 
 export const metadata: Metadata = {
   title: "Scrolly Snappy",
@@ -20,23 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${font.variable} antialiased`}
-      >
-       <div className="overflow-auto">
-       <header className="main-header">
-        <nav className="main-nav bg-green-800">
-          <div className="logo"><Link href="/">Snappy Squirrel ScrollyBooks</Link></div>
-          <ul className="main-nav-links">
-          <ul className="main-nav-links">
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/games">Games</Link></li>
-            <li><Link href="/parents">Parent Corner</Link></li>
-          </ul>
-          </ul>
-        </nav>
-      </header>
+      <body className={`${font.variable} antialiased`}>
+        <div className="overflow-auto">
+          <header className="main-header">
+            <Navigation />
+          </header>
           {children}
         </div>
       </body>
