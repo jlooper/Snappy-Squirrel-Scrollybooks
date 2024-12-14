@@ -240,3 +240,51 @@ body {
     top: 60px; /* Maintain position below main header on mobile */
   }
 }
+
+/* cards */
+
+.slider-container {
+  position: relative;
+  padding: 20px 0;
+}
+
+.cards-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cards-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+/* Optional: Add responsive styles */
+@media (max-width: 640px) {
+  .card {
+    width: 85vw;
+  }
+}
