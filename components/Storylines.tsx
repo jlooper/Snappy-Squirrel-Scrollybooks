@@ -22,7 +22,7 @@ export const stories: Story[] = [
     },
     {
       book: 1,
-      title: "Snappy and the Nuts",
+      title: "",
       tagline: "",
       id: 12,
       header: "The Nuts",
@@ -31,7 +31,7 @@ export const stories: Story[] = [
     },
     {
       book: 1,
-      title: "Snappy and the Nuts",
+      title: "",
       tagline: "",
       id: 13,
       header: "Auntie Pip",
