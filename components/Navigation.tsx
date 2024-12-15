@@ -15,7 +15,7 @@ export default function Navigation() {
         {/* Logo section */}
         <div className="logo flex-shrink-0">
           <Link href="/" className="text-l sm:text-xl md:text-2xl text-white">
-            Snappy Squirrel ScrollyBooks
+            Snappy Squirrel
           </Link>
         </div>
         

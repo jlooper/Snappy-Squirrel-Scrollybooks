@@ -2,40 +2,19 @@
 import { useEffect, useRef, useState } from 'react';
 import scrollama from 'scrollama';
 import Image from 'next/image';
-
-type Section = {
-  id: number;
-  content: string;
-  imageUrl: string;
-  header: string;
-};
+import { getStoriesByBook } from '@/components/Storylines';
+import { useParams, notFound } from 'next/navigation'
 
 export default function ScrollytellingComponent() {
   const [activeSection, setActiveSection] = useState(0);
   const scrollContentRef = useRef<HTMLDivElement>(null);
+  const params = useParams();
+  const bookId = parseInt(params.bookId as string, 10); // bookId matches the folder name [bookId]
 
-  const sections: Section[] = [
-    {
-      id: 1,
-      header: "Snappy and the Nuts",
-      content: "Snappy was a busy, happy squirrel. All day long in the fall he searched through the leaves on the forest floor for tasty nuts to store for the long winter. He squeaked with excitement each time he found a nut and quickly buried it where he was sure he'd find it in the coming months. He had to hide them because other animals wanted to eat them, too.",
-      imageUrl: "0.png",
-    },
-    {
-      id: 2,
-      header: "The Nuts",
-      content: "Sometimes the Deer brothers trampled them and broke the nut shells. Often the naughty Chipmunk family stole them. Sometimes, Snappy couldn't quite remember where he put the piles of nuts. Snappy had been working for a long time and had saved many nuts. They would taste so good all winter when the ground is covered with snow.",
-      imageUrl: "1.png",
-    },
-    {
-      id: 3,
-      header: "Auntie Pip",
-      content: "Snappy thought for a long time about the best place to store them safely where no one could break or steal the nuts. Finally he smiled happily, thinking: \"I'll ask Auntie Pip. She knows all kinds of interesting things.\"",
-      imageUrl: "2.png",
-    }
-  ];
-
-
+  // Handle invalid book ID
+  if (isNaN(bookId) || bookId < 1) {
+    notFound();
+  }
 
   useEffect(() => {
     const scroller = scrollama();
@@ -67,25 +46,29 @@ export default function ScrollytellingComponent() {
     return () => scroller.destroy();
   }, []);
 
+  const sections = getStoriesByBook(bookId);
+  
+  // Handle case where no stories found for valid book ID
+  if (!sections || sections.length === 0) {
+    notFound();
+  }
 
 
   return (
     <div className="page-wrapper">
-   
-
       <div className="content-wrapper">
         <div className="scroll-wrapper">
           <div className="scroll-fixed">
             <div className="graphic-container">
-              {sections.map((section, index) => (
+              {getStoriesByBook(bookId).map((story, index) => (
                 <div 
-                  key={section.id}
+                  key={story.id}
                   className={`graphic-image ${index === 0 ? 'is-active' : ''}`} 
                   data-step={index}
                 >
                   <Image
-                    src={`/${section.imageUrl}`}
-                    alt={section.header}
+                    src={`/images/${story.imageUrl}`}
+                    alt={story.header}
                     width={800}
                     height={600}
                     priority={index === 0}
@@ -103,7 +86,7 @@ export default function ScrollytellingComponent() {
              
 
                   <span className="section-indicator">
-                    {activeSection + 1} / {sections.length}
+                    {activeSection + 1} / {getStoriesByBook(bookId).length}
                   </span>
 
               
@@ -111,14 +94,14 @@ export default function ScrollytellingComponent() {
               </div>
             </header>
 
-            {sections.map((section) => (
+            {getStoriesByBook(bookId).map((story) => (
               <div 
-                key={section.id}
-                id={`section${section.id}`} 
+                key={story.id}
+                id={`story${story.id}`} 
                 className="scroll-text bg-green-800"
               >
-                <h2 className="text-3xl pb-5">{section.header}</h2>
-                <p className="text-2xl/loose">{section.content}</p>
+                <h2 className="text-3xl pb-5">{story.header}</h2>
+                <p className="text-2xl/loose">{story.content}</p>
               </div>
             ))}
           </div>

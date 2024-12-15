@@ -3,6 +3,7 @@ import { Playwrite_FR_Moderne } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import "./globals.css";
 
+
 const font = Playwrite_FR_Moderne({
   variable: "--font"
 });

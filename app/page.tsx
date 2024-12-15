@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { stories } from '@/components/Storylines';
 
 export default function HomeComponent() {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -24,14 +25,14 @@ export default function HomeComponent() {
     }
   };
 
-  type Item = {
+  /*type Item = {
     id: number;
     imageUrl: string;
     content: string;
     header: string;
-  };
+  };*/
 
-  const items: Item[] = [
+  /*const items: Item[] = [
     {
       id: 1,
       header: "Snappy and the Nuts",
@@ -62,7 +63,7 @@ export default function HomeComponent() {
       content: "A safer way to invest",
       imageUrl: "1.png",
     }
-  ];
+  ];*/
 
   return (
     <div className="page-wrapper">
@@ -91,9 +92,9 @@ export default function HomeComponent() {
               px-4 sm:px-4
               space-y-4 sm:space-y-0"
           >
-            {items.map((item) => (
+            {stories.map((story) => (
               <div 
-                key={item.id}
+                key={story.id}
                 className="card 
                   block sm:inline-block 
                   w-full sm:w-72
@@ -105,21 +106,21 @@ export default function HomeComponent() {
                   sm:whitespace-normal 
                   sm:align-top"
               >
-                <Link href={`/${item.id}`} className="block h-full">
+                <Link href={`/${story.id}`} className="block h-full">
                   <div className="flex flex-col h-full p-4">
                     <div className="rounded-lg mb-4 flex-shrink-0">   
                       <Image
-                        src={`/${item.imageUrl}`}
-                        alt={item.header}
+                        src={`/images/${story.imageUrl}`}
+                        alt={story.header}
                         width={800}
                         height={800}
-                        priority={item.id === 0}
+                        priority={story.id === 0}
                         className="w-full h-auto rounded-lg"
                       />                                         
                     </div>
-                    <h3 className="text-lg sm:text-xl font-bold mb-2">{item.header}</h3>
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">{story.header}</h3>
                     {/* Show content on mobile */}
-                    <p className="sm:hidden">{item.content}</p>
+                    <p className="sm:hidden">{story.content}</p>
                   </div>
                 </Link>
               </div>

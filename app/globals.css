@@ -18,7 +18,7 @@ body {
   color: var(--foreground);
   font-family: var(--font);
   background: var(--background);
-  background-image: url('/bg.svg');
+  background-image: url('/images/bg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
