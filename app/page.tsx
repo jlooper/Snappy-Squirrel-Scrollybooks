@@ -2,10 +2,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRef } from 'react';
-import { stories } from '@/components/Storylines';
+import { stories, getFirstStoryPerBook } from '@/components/Storylines';
 
 export default function HomeComponent() {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const firstStoriesPerBook = getFirstStoryPerBook(stories);
 
   const slideLeft = () => {
     if (sliderRef.current) {
@@ -24,46 +25,6 @@ export default function HomeComponent() {
       });
     }
   };
-
-  /*type Item = {
-    id: number;
-    imageUrl: string;
-    content: string;
-    header: string;
-  };*/
-
-  /*const items: Item[] = [
-    {
-      id: 1,
-      header: "Snappy and the Nuts",
-      content: "Snappy needs to save nuts for Winter",
-      imageUrl: "0.png",
-    },
-    {
-      id: 2,
-      header: "Snappy Needs a Nest",
-      content: "Snappy needs a warm home!",
-      imageUrl: "1.png",
-    },
-    {
-      id: 3,
-      header: "Snappy Plays the Stock Market",
-      content: "Snappy loses some and wins some!",
-      imageUrl: "2.png",
-    },
-    {
-      id: 4,
-      header: "Snappy Loses",
-      content: "A risky investment",
-      imageUrl: "0.png",
-    },
-    {
-      id: 5,
-      header: "Snappy Buys a Bond",
-      content: "A safer way to invest",
-      imageUrl: "1.png",
-    }
-  ];*/
 
   return (
     <div className="page-wrapper">
@@ -92,7 +53,7 @@ export default function HomeComponent() {
               px-4 sm:px-4
               space-y-4 sm:space-y-0"
           >
-            {stories.map((story) => (
+            {firstStoriesPerBook.map((story) => (
               <div 
                 key={story.id}
                 className="card 
@@ -106,7 +67,7 @@ export default function HomeComponent() {
                   sm:whitespace-normal 
                   sm:align-top"
               >
-                <Link href={`/${story.id}`} className="block h-full">
+                <Link href={`/${story.book}`} className="block h-full">
                   <div className="flex flex-col h-full p-4">
                     <div className="rounded-lg mb-4 flex-shrink-0">   
                       <Image
@@ -119,8 +80,7 @@ export default function HomeComponent() {
                       />                                         
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold mb-2">{story.header}</h3>
-                    {/* Show content on mobile */}
-                    <p className="sm:hidden">{story.content}</p>
+                    <p className="mt-3 mb-3">{story.tagline}</p>
                   </div>
                 </Link>
               </div>
