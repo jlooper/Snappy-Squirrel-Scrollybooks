@@ -46,13 +46,12 @@ export default function ScrollytellingComponent() {
     return () => scroller.destroy();
   }, []);
 
-  const sections = getStoriesByBook(bookId);
+  const story = getStoriesByBook(bookId);
   
   // Handle case where no stories found for valid book ID
-  if (!sections || sections.length === 0) {
+  if (!story || story.length === 0) {
     notFound();
   }
-
 
   return (
     <div className="page-wrapper">
@@ -60,7 +59,7 @@ export default function ScrollytellingComponent() {
         <div className="scroll-wrapper">
           <div className="scroll-fixed">
             <div className="graphic-container">
-              {getStoriesByBook(bookId).map((story, index) => (
+              {story.map((story, index) => (
                 <div 
                   key={story.id}
                   className={`graphic-image ${index === 0 ? 'is-active' : ''}`} 
@@ -73,20 +72,31 @@ export default function ScrollytellingComponent() {
                     height={600}
                     priority={index === 0}
                   />
-                </div>
+
+       
+                
+        </div>
+                
+
+
               ))}
             </div>
           </div>
 
+
           <div className="scroll-content" ref={scrollContentRef}>
             <header className="story-header bg-green-900">
-              <div className="story-nav">
-                <h1 className="story-title">Snappy and the Nuts</h1>
+              <div className="story-nav">              
+                <h1 className="story-title">{story[0].title}</h1>           
                 <div className="nav-controls">
-             
+                
+                <div className=" top-4 text-white px-4 py-2 rounded-full flex items-center gap-2">
+                  <span>Scroll</span>
+                  <div className="animate-bounce">↓</div>
+                </div>
 
                   <span className="section-indicator">
-                    {activeSection + 1} / {getStoriesByBook(bookId).length}
+                    {activeSection + 1} / {story.length}
                   </span>
 
               
@@ -94,7 +104,7 @@ export default function ScrollytellingComponent() {
               </div>
             </header>
 
-            {getStoriesByBook(bookId).map((story) => (
+            {story.map((story) => (
               <div 
                 key={story.id}
                 id={`story${story.id}`} 

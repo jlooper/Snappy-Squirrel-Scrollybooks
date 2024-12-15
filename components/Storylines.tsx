@@ -1,6 +1,7 @@
 // types/storylines.ts
 export interface Story {
     book: number;
+    title: string;
     tagline: string;
     id: number;
     header: string;
@@ -12,6 +13,7 @@ export interface Story {
 export const stories: Story[] = [
     {
       book: 1,
+      title: "Snappy and the Nuts",
       tagline: "Snappy needs to save nuts for winter.",
       id: 11,
       header: "Snappy and the Nuts",
@@ -20,6 +22,7 @@ export const stories: Story[] = [
     },
     {
       book: 1,
+      title: "Snappy and the Nuts",
       tagline: "",
       id: 12,
       header: "The Nuts",
@@ -28,6 +31,7 @@ export const stories: Story[] = [
     },
     {
       book: 1,
+      title: "Snappy and the Nuts",
       tagline: "",
       id: 13,
       header: "Auntie Pip",
@@ -36,6 +40,7 @@ export const stories: Story[] = [
     },
     {
       book: 2,
+      title: "Snappy Needs a Nest",
       tagline: "Snappy needs a warm home!",
       id: 21,
       header: "Snappy Needs a Nest",
