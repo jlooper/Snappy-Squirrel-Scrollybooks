@@ -101,7 +101,7 @@ export default function ScrollytellingComponent() {
               <div 
                 key={story.id}
                 id={`story${story.id}`} 
-                className="scroll-text bg-green-900"
+                className="scroll-text bg-white text-black"
               >
                 {/* Mobile image - shown only on mobile */}
                 <div className="md:hidden w-full h-[50vh] relative mb-6">
