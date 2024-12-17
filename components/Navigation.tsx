@@ -10,7 +10,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="main-nav bg-green-800 relative">
+    <nav className="main-nav bg-blue-800 relative">
       <div className="flex items-center justify-between px-4 py-3">
         {/* Logo section */}
         <div className="logo flex-shrink-0">
@@ -22,7 +22,7 @@ export default function Navigation() {
         {/* Hamburger button */}
         <button
           onClick={toggleMenu}
-          className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-green-700 focus:outline-none"
+          className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-700 focus:outline-none"
           aria-expanded={isMenuOpen}
         >
           <span className="sr-only">Open main menu</span>
@@ -65,7 +65,7 @@ export default function Navigation() {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } sm:hidden w-full bg-green-800 z-50`}
+        } sm:hidden w-full bg-blue-800 z-50`}
       >
         <ul className="px-2 pt-2 pb-3 space-y-1">
           {[
@@ -77,7 +77,7 @@ export default function Navigation() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="block px-3 py-2 rounded-md text-white hover:bg-green-700 text-right"
+                className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 text-right"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}

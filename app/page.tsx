@@ -29,10 +29,10 @@ export default function HomeComponent() {
   return (
     <div className="page-wrapper">
       <div className="content-wrapper">
-        <h1 className="text-xl sm:text-2xl md:text-3xl m-4 sm:m-10">
+        <h1 className="text-xl sm:text-2xl md:text-3xl m-6">
           Welcome to Snappy Squirrel Scrollybooks
         </h1>
-        <h2 className="text-lg sm:text-xl md:text-2xl m-4 sm:m-10">
+        <h2 className="text-lg sm:text-xl md:text-2xl mx-6">
           Here, financial literacy is made simple and fun for kids of all ages. Click on a card and scroll the text area to learn!
         </h2>
         
@@ -40,7 +40,7 @@ export default function HomeComponent() {
         <div className="slider-container relative w-full py-4 sm:py-8">
           <button 
             onClick={slideLeft}
-            className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-green-800 text-white p-2 rounded-r-lg"
+            className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-r-lg"
           >
             ←
           </button>
@@ -89,7 +89,7 @@ export default function HomeComponent() {
        
           <button 
             onClick={slideRight}
-            className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-green-800 text-white p-2 rounded-l-lg"
+            className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-l-lg"
           >
             →
           </button>

@@ -81,15 +81,15 @@ export default function ScrollytellingComponent() {
           </div>
 
           <div className="scroll-content" ref={scrollContentRef}>
-            <header className="story-header bg-green-900 hidden md:block">
+            <header className="story-header bg-yellow-500 hidden md:block">
               <div className="story-nav">              
-                <h1 className="story-title">{story[0].title}</h1>           
+                <h1 className="story-title text-black">{story[0].title}</h1>           
                 <div className="nav-controls">
-                  <div className="top-4 text-white px-4 py-2 rounded-full flex items-center gap-2">
+                  <div className="top-4 text-black px-4 py-2 rounded-full flex items-center gap-2">
                     <span>Scroll</span>
                     <div className="animate-bounce">↓</div>
                   </div>
-                  <span className="section-indicator">
+                  <span className="section-indicator text-black">
                     {activeSection + 1} / {story.length}
                   </span>
                 </div>
@@ -101,7 +101,7 @@ export default function ScrollytellingComponent() {
               <div 
                 key={story.id}
                 id={`story${story.id}`} 
-                className="scroll-text bg-green-800"
+                className="scroll-text bg-green-900"
               >
                 {/* Mobile image - shown only on mobile */}
                 <div className="md:hidden w-full h-[50vh] relative mb-6">
