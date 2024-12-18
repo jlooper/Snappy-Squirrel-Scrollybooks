@@ -53,7 +53,7 @@ export const stories: Story[] = [
       tagline: "",
       id: 14,
       header: "Mr. Fox",
-      content: "Mr. Fox, who always seemed interested in other peoples’ business, ambled over to Snappy and Auntie Pip. “I have a bank as well, much better than Owl’s. It’s called ‘Fox’s Friends’ Bank’. I will give you three pine nuts for every acorn that you deposit in my bank.”\"",
+      content: "Mr. Fox, who always seemed interested in other peoples’ business, ambled over to Snappy and Auntie Pip. “I have a bank as well, much better than Owl’s. It’s called ‘Fox’s Friends’ Bank’. I will give you three pine nuts for every acorn that you deposit in my bank.”",
       imageUrl: "2.png",
     },
     {
