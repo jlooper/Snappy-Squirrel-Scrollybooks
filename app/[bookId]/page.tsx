@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from 'react';
 import scrollama from 'scrollama';
 import Image from 'next/image';
 import { getStoriesByBook } from '@/components/Storylines';
+import LadyBug from '@/components/LadyBug';
+
 
 export default function ScrollytellingComponent() {
   const params = useParams();
@@ -115,6 +117,7 @@ export default function ScrollytellingComponent() {
                 </div>
                 <h2 className="text-2xl pb-5">{story.header}</h2>
                 <p className="text-xl/loose">{story.content}</p>
+                <LadyBug funFact={story.funFact} />
               </div>
             ))}
           </div>
