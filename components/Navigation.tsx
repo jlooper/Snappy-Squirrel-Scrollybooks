@@ -10,7 +10,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="main-nav bg-blue-800 relative">
+    <nav className="main-nav bg-green-800 relative">
       <div className="flex items-center justify-between px-4 py-3">
         {/* Logo section */}
         <div className="logo flex-shrink-0">
@@ -55,7 +55,6 @@ export default function Navigation() {
           <ul className="flex space-x-6 text-white ml-auto">
             <li className="text-right"><Link href="/about" className="hover:text-gray-200">About</Link></li>
             <li className="text-right"><Link href="/contact" className="hover:text-gray-200">Contact</Link></li>
-            <li className="text-right"><Link href="/games" className="hover:text-gray-200">Games</Link></li>
             <li className="text-right"><Link href="/parents" className="hover:text-gray-200">Parent Corner</Link></li>
           </ul>
         </div>
@@ -71,7 +70,6 @@ export default function Navigation() {
           {[
             { href: "/about", label: "About" },
             { href: "/contact", label: "Contact" },
-            { href: "/games", label: "Games" },
             { href: "/parents", label: "Parent Corner" },
           ].map((link) => (
             <li key={link.href}>

@@ -40,7 +40,7 @@ export default function HomeComponent() {
         <div className="slider-container relative w-full py-4 sm:py-8">
           <button 
             onClick={slideLeft}
-            className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-r-lg"
+            className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-green-800 text-white p-2 rounded-r-lg"
           >
             ←
           </button>
@@ -61,7 +61,7 @@ export default function HomeComponent() {
                   w-full sm:w-72
                   mb-4 sm:mb-0 
                   mr-0 sm:mr-4 
-                  bg-orange-900 
+                  bg-orange-400 
                   rounded-lg 
                   shadow-lg 
                   sm:whitespace-normal 
@@ -89,7 +89,7 @@ export default function HomeComponent() {
        
           <button 
             onClick={slideRight}
-            className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-l-lg"
+            className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-green-800 text-white p-2 rounded-l-lg"
           >
             →
           </button>
