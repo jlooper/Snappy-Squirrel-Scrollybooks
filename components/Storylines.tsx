@@ -79,7 +79,7 @@ export const stories: Story[] = [
       id: 16,
       header: "A Better Bank",
       content: "Mr. Fox walked away in a huff. Auntie Pip looked kindly at Snappy. “Many banks want you to deposit your property with them so that they can use it to buy other things, but you have to be careful. Owl is a good banker and won’t take advantage of you. He will give you only two pine nuts for each acorn, but you can get your acorns back any time and you get your pine nuts right away.”",
-      imageUrl: "6.png",
+      imageUrl: "",
       funFact: "What other kinds of business practices would a bank offer to attract customers?",
     },
     {
@@ -89,7 +89,7 @@ export const stories: Story[] = [
       id: 17,
       header: "A Deposit",
       content: "Snappy thought that this sounded like a great plan. He worked hard all day digging up his nuts and carrying them to Owl’s Bank. Finally he had a large pile of nuts ready for Owl to take, and knocked at the bank’s door in Owl’s big tree stump. Owl put on his spectacles and turned his head this way and that to look at the beautiful pile of nuts. “You’re welcome to store these nuts in my bank, Snappy,” said Owl, “but you’ll need to open an account.”",
-      imageUrl: "7.png",
+      imageUrl: "",
       funFact: "When is your local bank open?",
     },
     {
@@ -99,7 +99,7 @@ export const stories: Story[] = [
       id: 18,
       header: "Safe",
       content: "Snappy wrote his name on the leaf that Owl showed him.  Owl accepted it and signed it carefully. Together with Aunt Pip, Snappy and Owl carried the nuts to a safe storeroom in the base of Owl’s tree stump. “Now,” Snappy thought, “my property is safe from the Chipmunks and the Deer brothers - and Mr. Fox as well!”",
-      imageUrl: "8.png",
+      imageUrl: "",
       funFact: "Do you own a bank account? Why or Why not? What are your goals?",
     },
     /*{
