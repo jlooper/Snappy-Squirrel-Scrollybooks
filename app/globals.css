@@ -56,6 +56,52 @@ body {
   text-decoration: none;
 }
 
+/* second navigation indicator */
+/* Navigation Controls */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.scroll-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.scroll-indicator span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+  .scroll-indicator {
+    padding: 0.5rem;
+    gap: 0.25rem;
+  }
+}
+
 /* Content area */
 .content-wrapper {
   margin-top: 60px; /* Account for main header */
@@ -66,12 +112,18 @@ body {
 
 /* Story header */
 .story-header {
-  height: 60px;
-  position: sticky;
-  top: 0px; /* Stick below main header */
-  left: 0;
+  position: fixed;
+  top: 60px;
   right: 0;
-  z-index: 900;
+  width: 50%;
+  height: 60px;
+  z-index: 100;
+  background-color: rgb(234 179 8);
+  transition: width 0.3s ease;
+}
+
+.story-header.full-width {
+  width: 100%;
 }
 
 .story-nav {
@@ -89,23 +141,28 @@ body {
   margin: 0;
 }
 
-/* Scroll area */
+/* Layout Structure */
 .scroll-wrapper {
   display: flex;
-  height: calc(100vh - 60px); /* Subtract only main header height */
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Fixed Image Section */
+.scroll-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
   overflow: hidden;
 }
 
-.scroll-fixed {
-  flex: 0 0 50%;
-  height: 100%;
-  position: relative;
-}
+
 
 .graphic-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -117,13 +174,13 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .graphic-image.is-active {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
 
 .graphic-image img {
@@ -132,187 +189,111 @@ body {
   object-fit: cover;
 }
 
+/* Scrollable Content Section */
 .scroll-content {
-  flex: 0 0 50%;
-  height: 100%;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-
-.scroll-text {
+  width: 50%;
+  margin-left: 50%; /* Offset for fixed image section */
   min-height: 100vh;
+  transition: width 0.3s ease, margin-left 0.3s ease;
+}
+
+.scroll-content.full-width {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* Text Content Styling */
+.scroll-text {
   padding: 2rem;
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  opacity: 0.3;
-  transition: opacity 0.3s ease;
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  min-height: 90vh; /* Make each box take up most of the viewport height */
 }
 
+.scroll-text.full-width {
+  max-width: 1200px;
+}
+
+/* Active state for current text box */
 .scroll-text.is-active {
-  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation Controls */
-.nav-controls {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+/* Text content inside boxes */
+.scroll-text h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-.nav-button {
-  background: none;
-  border: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  border-radius: 50%;
+.scroll-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
-.nav-button:hover:not(.disabled) {
-  background-color: rgba(0, 0, 0, 0.1);
+/* Scrollable Content Section */
+.scroll-content {
+  width: 50%;
+  margin-left: 50%;
+  padding: 60px 10px;
+  transition: width 0.3s ease, margin-left 0.3s ease;
+  background-color: #f5f5f5; /* Light background to contrast with white boxes */
 }
 
-.nav-button.disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
+.scroll-content.full-width {
+  width: 100%;
+  margin-left: 0;
 }
 
-.nav-button svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.section-indicator {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #fff;
-  min-width: 3rem;
-  text-align: center;
-}
-
-/* Responsive styles */
+/* Media Queries */
 @media (max-width: 768px) {
-  .story-nav {
-    padding: 0 1rem;
-  }
-
-  .scroll-wrapper {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .scroll-fixed {
-    height: 50vh;
-    position: sticky;
-    top: 60px; /* Stick below main header */
-    width: 100%;
+  .scroll-text {
+    margin: 1rem;
+    padding: 1.5rem;
+    min-height: auto; /* Allow more flexible height on mobile */
   }
 
   .scroll-content {
+    padding-top: 70px;
+  }
+}
+
+/* Optional: Add hover effect */
+.scroll-text:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Optional: Add subtle decoration */
+.scroll-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 12px 12px 0 0;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .scroll-content {
     width: 100%;
+    margin-left: 0;
   }
 
   .scroll-text {
-    min-height: 50vh;
     padding: 2rem 1rem;
   }
-
-  .story-header {
-    top: 60px; /* Maintain position below main header on mobile */
-  }
-}
-
-/* cards */
-
-.slider-container {
-  position: relative;
-  padding: 20px 0;
-}
-
-.cards-container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.cards-container::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari and Opera */
-}
-
-.card {
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.cards-container {
-  display: flex;
-  align-items: stretch;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
-.card a {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-
-/* Optional: Add responsive styles */
-@media (max-width: 640px) {
-  .card {
-    width: 85vw;
-  }
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.main-nav {
-  @apply shadow-md;
-}
-
-.main-nav a {
-  @apply transition-colors duration-200;
-}
-
-
-@keyframes fadeInOut {
-  0%, 100% { opacity: 0.5; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(5px); }
-}
-
-.scroll-indicator-wrapper {
-  animation: slideIn 0.5s ease-out;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -20px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
-
-.animate-bounce {
-  animation: fadeInOut 1.5s infinite;
 }

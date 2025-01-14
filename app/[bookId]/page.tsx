@@ -1,4 +1,3 @@
-// app/[bookId]/page.tsx
 'use client';
 import { useParams, notFound } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
@@ -7,19 +6,16 @@ import Image from 'next/image';
 import { getStoriesByBook } from '@/components/Storylines';
 import LadyBug from '@/components/LadyBug';
 
-
 export default function ScrollytellingComponent() {
   const params = useParams();
   const bookId = parseInt(params.bookId as string, 10);
   
-  // Handle invalid book ID
   if (isNaN(bookId) || bookId < 1) {
     notFound();
   }
 
   const story = getStoriesByBook(bookId);
   
-  // Handle case where no stories found for valid book ID
   if (!story || story.length === 0) {
     notFound();
   }
@@ -34,87 +30,105 @@ export default function ScrollytellingComponent() {
       .setup({
         step: '.scroll-text',
         offset: 0.5,
-        debug: false
+        debug: false,
+        progress: true
       })
       .onStepEnter(response => {
         setActiveSection(response.index);
         
+        // Handle image transitions
         document.querySelectorAll('.graphic-image').forEach(img => {
           img.classList.remove('is-active');
         });
         
-        const activeImage = document.querySelector(
-          `.graphic-image[data-step="${response.index}"]`
-        );
-        activeImage?.classList.add('is-active');
+        const currentStory = story[response.index];
+        const scrollContent = document.querySelector('.scroll-content');
         
-        response.element.classList.add('is-active');
-      })
-      .onStepExit(response => {
-        response.element.classList.remove('is-active');
+        if (scrollContent) {
+          if (!currentStory.imageUrl) {
+            scrollContent.classList.add('full-width');
+          } else {
+            scrollContent.classList.remove('full-width');
+            
+            const activeImage = document.querySelector(
+              `.graphic-image[data-step="${response.index}"]`
+            );
+            if (activeImage) {
+              activeImage.classList.add('is-active');
+            }
+          }
+        }
       });
 
     return () => scroller.destroy();
-  }, []);
+  }, [story]);
 
   return (
     <div className="page-wrapper">
       <div className="content-wrapper">
         <div className="scroll-wrapper">
-          {/* Desktop fixed image container - hidden on mobile */}
+          {/* Fixed image container */}
           <div className="scroll-fixed hidden md:block">
             <div className="graphic-container">
               {story.map((story, index) => (
-                <div 
-                  key={story.id}
-                  className={`graphic-image ${index === 0 ? 'is-active' : ''}`} 
-                  data-step={index}
-                >
-                  <Image
-                    src={`/images/${story.imageUrl}`}
-                    alt={story.header}
-                    width={800}
-                    height={600}
-                    priority={index === 0}
-                  />
-                </div>
+                story.imageUrl && (
+                  <div 
+                    key={story.id}
+                    className={`graphic-image ${index === 0 ? 'is-active' : ''}`} 
+                    data-step={index}
+                  >
+                    <Image
+                      src={`/images/${story.imageUrl}`}
+                      alt={story.header}
+                      width={800}
+                      height={600}
+                      priority={index === 0}
+                      className="object-cover"
+                    />
+                  </div>
+                )
               ))}
             </div>
           </div>
 
-          <div className="scroll-content" ref={scrollContentRef}>
-            <header className="story-header bg-yellow-500 hidden md:block">
+          {/* Scrollable content */}
+          <div 
+            className={`scroll-content ${!story[activeSection].imageUrl ? 'full-width' : ''}`} 
+            ref={scrollContentRef}
+          >
+            <header className={`story-header hidden bg-yellow-500 md:block ${!story[activeSection].imageUrl ? 'full-width' : ''}`}>
               <div className="story-nav">              
                 <h1 className="story-title text-black">{story[0].title}</h1>           
-                <div className="nav-controls">
-                  <div className="top-4 text-black px-4 py-2 rounded-full flex items-center gap-2">
+                <div className="nav-controls nav-button fixed-controls items-center gap-2">
+                  <div className="scroll-indicator">
                     <span>Scroll</span>
                     <div className="animate-bounce">↓</div>
                   </div>
-                  <span className="section-indicator text-black">
+                  <span className="section-indicator">
                     {activeSection + 1} / {story.length}
                   </span>
                 </div>
               </div>
             </header>
 
-            {/* Mobile cards with integrated images */}
             {story.map((story) => (
               <div 
                 key={story.id}
                 id={`story${story.id}`} 
-                className="scroll-text bg-white text-black"
+                className={`scroll-text bg-white text-black ${!story.imageUrl ? 'full-width' : ''}`}
               >
-                {/* Mobile image - shown only on mobile */}
-                <div className="md:hidden w-full h-[50vh] relative mb-6">
-                  <Image
-                    src={`/images/${story.imageUrl}`}
-                    alt={story.header}
-                    fill
-                    className="object-cover"
-                    priority={story.id === 0}
-                  />
-                </div>
+                {/* Mobile image */}
+                {story.imageUrl && (
+                  <div className="md:hidden w-full h-[50vh] relative mb-6">
+                    <Image
+                      src={`/images/${story.imageUrl}`}
+                      alt={story.header}
+                      fill
+                      className="object-cover"
+                      priority={story.id === 0}
+                    />
+                  </div>
+                )}
                 <h2 className="text-2xl pb-5">{story.header}</h2>
                 <p className="text-xl/loose">{story.content}</p>
                 <LadyBug funFact={story.funFact} />
