@@ -59,7 +59,7 @@ export const stories: Story[] = [
       id: 14,
       header: "Mr. Fox",
       content: "Mr. Fox, who always seemed interested in other peoples’ business, ambled over to Snappy and Auntie Pip. “I have a bank as well, much better than Owl’s. It’s called ‘Fox’s Friends’ Bank’. I will give you three pine nuts for every acorn that you deposit in my bank.”",
-      imageUrl: "4.png",
+      imageUrl: "",
       funFact: "What are the names of your local banks?",
     },
     {
@@ -69,7 +69,7 @@ export const stories: Story[] = [
       id: 15,
       header: "A Sharp Customer",
       content: "Auntie Pip looked severely at Fox. “Mr. Fox, I know very well that you make this offer to everyone. I also know that you will not allow Snappy to take his nuts back until a whole year has passed. And you say you give more pine nuts, but you won’t let Snappy have those either until the year has passed. It’s not quite fair.”",
-      imageUrl: "5.png",
+      imageUrl: "",
       funFact: "Are there banks in your town or city that seem to offer more to their customers, but really offer less?",
     },
     {
@@ -79,7 +79,7 @@ export const stories: Story[] = [
       id: 16,
       header: "A Better Bank",
       content: "Mr. Fox walked away in a huff. Auntie Pip looked kindly at Snappy. “Many banks want you to deposit your property with them so that they can use it to buy other things, but you have to be careful. Owl is a good banker and won’t take advantage of you. He will give you only two pine nuts for each acorn, but you can get your acorns back any time and you get your pine nuts right away.”",
-      imageUrl: "",
+      imageUrl: "4.png",
       funFact: "What other kinds of business practices would a bank offer to attract customers?",
     },
     {
@@ -89,7 +89,7 @@ export const stories: Story[] = [
       id: 17,
       header: "A Deposit",
       content: "Snappy thought that this sounded like a great plan. He worked hard all day digging up his nuts and carrying them to Owl’s Bank. Finally he had a large pile of nuts ready for Owl to take, and knocked at the bank’s door in Owl’s big tree stump. Owl put on his spectacles and turned his head this way and that to look at the beautiful pile of nuts. “You’re welcome to store these nuts in my bank, Snappy,” said Owl, “but you’ll need to open an account.”",
-      imageUrl: "",
+      imageUrl: "5.png",
       funFact: "When is your local bank open?",
     },
     {

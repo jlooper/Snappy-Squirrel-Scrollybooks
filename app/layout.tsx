@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.variable} antialiased`}>
+      <body className={`${font.variable} antialiased bg-green-600 text-white`}>
         <div className="overflow-auto">
           <header className="main-header">
             <Navigation />

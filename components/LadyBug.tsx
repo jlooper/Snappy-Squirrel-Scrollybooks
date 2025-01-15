@@ -10,7 +10,7 @@ export default function LadyBug({ funFact = "Fun fact about this section!" }: La
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="pt-10">
+    <div>
         Click the ladybug!
       <span 
         role="button"

@@ -4,14 +4,11 @@
 
 :root {
   --background: #fdfcf3;
-  --foreground: black;
 }
 
-body {
-  color: var(--foreground);
+body {  
   font-family: var(--font);
-  background: var(--background);
-  /*background-image: url('/images/bg.svg');*/
+  background-image: url('/images/bg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,13 +192,18 @@ body {
   margin-left: 50%; /* Offset for fixed image section */
   min-height: 100vh;
   transition: width 0.3s ease, margin-left 0.3s ease;
+  background-image: url('/images/bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  padding: 60px 10px;
 }
 
 .scroll-content.full-width {
   width: 100%;
   margin-left: 0;
 }
-
 /* Text Content Styling */
 .scroll-text {
   padding: 2rem;
@@ -213,7 +215,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  min-height: 90vh; /* Make each box take up most of the viewport height */
 }
 
 .scroll-text.full-width {
@@ -240,19 +241,8 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Scrollable Content Section */
-.scroll-content {
-  width: 50%;
-  margin-left: 50%;
-  padding: 60px 10px;
-  transition: width 0.3s ease, margin-left 0.3s ease;
-  background-color: #f5f5f5; /* Light background to contrast with white boxes */
-}
 
-.scroll-content.full-width {
-  width: 100%;
-  margin-left: 0;
-}
+
 
 /* Media Queries */
 @media (max-width: 768px) {

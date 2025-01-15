@@ -93,10 +93,10 @@ export default function ScrollytellingComponent() {
 
           {/* Scrollable content */}
           <div 
-            className={`scroll-content ${!story[activeSection].imageUrl ? 'full-width' : ''}`} 
+            className={`bg-green-600 scroll-content ${!story[activeSection].imageUrl ? 'full-width' : ''}`} 
             ref={scrollContentRef}
           >
-            <header className={`story-header hidden bg-yellow-500 md:block ${!story[activeSection].imageUrl ? 'full-width' : ''}`}>
+            <header className={`story-header hidden bg-yellow-500 text-black md:block ${!story[activeSection].imageUrl ? 'full-width' : ''}`}>
               <div className="story-nav">              
                 <h1 className="story-title text-black">{story[0].title}</h1>           
                 <div className="nav-controls nav-button fixed-controls items-center gap-2">
