@@ -102,16 +102,46 @@ export const stories: Story[] = [
       imageUrl: "",
       funFact: "Do you own a bank account? Why or Why not? What are your goals?",
     },
-    /*{
+    {
       book: 2,
       title: "Snappy Needs a Nest",
       tagline: "Snappy needs a warm home!",
-      id: 20,
+      id: 19,
       header: "Snappy Needs a Nest",
-      content: "Copy",
-      imageUrl: "1.png",
+      content: "",
+      imageUrl: "coming-soon.png",
       funFact: "fact context here",
-    }*/
+    },
+    {
+      book: 3,
+      title: "Snappy Plays the Stock Market",
+      tagline: "Snappy loses some and wins some",
+      id: 20,
+      header: "Snappy Plays the Stock Market",
+      content: "",
+      imageUrl: "coming-soon.png",
+      funFact: "fact context here",
+    },
+    {
+      book: 4,
+      title: "Snappy Loses",
+      tagline: "A risky investment",
+      id: 21,
+      header: "A risky investment",
+      content: "",
+      imageUrl: "coming-soon.png",
+      funFact: "fact context here",
+    },
+    {
+      book: 5,
+      title: "Snappy Buys a Bond",
+      tagline: "A safer way to invest",
+      id: 22,
+      header: "A safer way to invest",
+      content: "",
+      imageUrl: "coming-soon.png",
+      funFact: "fact context here",
+    }
   ];
   
   export const getStoriesByBook = (bookNumber: number): Story[] => {

@@ -53,21 +53,41 @@ export default function HomeComponent() {
               px-4 sm:px-4
               space-y-4 sm:space-y-0"
           >
+            
             {firstStoriesPerBook.map((story) => (
               <div 
                 key={story.id}
-                className="card 
+                className={`card 
                   block sm:inline-block 
                   w-full sm:w-72
                   mb-4 sm:mb-0 
                   mr-0 sm:mr-4 
-                  bg-orange-400 
+                  ${story.content ? 'bg-orange-400 hover:bg-orange-500 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}
                   rounded-lg 
                   shadow-lg 
                   sm:whitespace-normal 
-                  sm:align-top"
+                  sm:align-top`}
               >
-                <Link href={`/${story.book}`} className="block h-full">
+                {story.content ? (
+                  // If copy exists, wrap with Link
+                  <Link href={`/${story.book}`} className="block h-full">
+                    <div className="flex flex-col h-full p-4">
+                      <div className="rounded-lg mb-4 flex-shrink-0">   
+                        <Image
+                          src={`/images/${story.imageUrl}`}
+                          alt={story.header}
+                          width={800}
+                          height={800}
+                          priority={story.id === 0}
+                          className="w-full h-auto rounded-lg"
+                        />                                         
+                      </div>
+                      <h3 className="text-lg sm:text-xl font-bold mb-2">{story.header}</h3>
+                      <p className="mt-3 mb-3">{story.tagline}</p>
+                    </div>
+                  </Link>
+                ) : (
+                  // If copy is empty, render without Link
                   <div className="flex flex-col h-full p-4">
                     <div className="rounded-lg mb-4 flex-shrink-0">   
                       <Image
@@ -82,7 +102,7 @@ export default function HomeComponent() {
                     <h3 className="text-lg sm:text-xl font-bold mb-2">{story.header}</h3>
                     <p className="mt-3 mb-3">{story.tagline}</p>
                   </div>
-                </Link>
+                )}
               </div>
             ))}
           </div>
