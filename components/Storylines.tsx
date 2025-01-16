@@ -115,7 +115,7 @@ export const stories: Story[] = [
     {
       book: 3,
       title: "Snappy Plays the Stock Market",
-      tagline: "Snappy Loses Some and Wins Some",
+      tagline: "Snappy loses some and wins some",
       id: 20,
       header: "Snappy Plays the Stock Market",
       content: "",
@@ -125,9 +125,9 @@ export const stories: Story[] = [
     {
       book: 4,
       title: "Snappy Loses",
-      tagline: "A Risky Investment",
+      tagline: "A risky investment",
       id: 21,
-      header: "A risky investment",
+      header: "Snappy Loses",
       content: "",
       imageUrl: "coming-soon.png",
       funFact: "fact context here",
@@ -135,9 +135,9 @@ export const stories: Story[] = [
     {
       book: 5,
       title: "Snappy Buys a Bond",
-      tagline: "A Safer Way to Invest",
+      tagline: "A safer way to invest",
       id: 22,
-      header: "A safer way to invest",
+      header: "Snappy Buys a Bond",
       content: "",
       imageUrl: "coming-soon.png",
       funFact: "fact context here",
