@@ -45,7 +45,7 @@ export default function About() {
         {/* caption */}
         <p className="text-xl leading-loose italic">Digitally removing the background of each piece for importing into Procreate</p>
         <Image
-          src="/images/fox.png"
+          src="/images/final-fox.png"
           alt="the final fox collage"
           width={600}
           height={630}
