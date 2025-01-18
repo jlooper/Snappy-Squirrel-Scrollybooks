@@ -6,8 +6,8 @@ export default function About() {
     return (
       <div className="container bg-green-800 rounded mx-auto p-4 mt-20">
       <h1 className="text-3xl font-bold mb-6">About Snappy Scrollybooks</h1>
-      <h2 className="text-2xl font-bold pt-6 mb-6">The authors</h2>
-      <p className="text-xl leading-loose">Snappy Squirrel Scrollybooks is a financial literacy platform that makes learning about money fun and engaging for kids of all ages. Our interactive stories are designed to help children develop a healthy relationship with money and learn important financial concepts in a simple and entertaining way.</p>
+      <h2 className="text-2xl font-bold pt-6 pb-6">The authors</h2>
+      <p className="text-xl pb-6 leading-loose">Snappy Squirrel Scrollybooks is a financial literacy platform that makes learning about money fun and engaging for kids of all ages. Our interactive stories are designed to help children develop a healthy relationship with money and learn important financial concepts in a simple and entertaining way.</p>
       <Image
           src="/images/authors.jpeg"
           alt="Jerry and Jen"
