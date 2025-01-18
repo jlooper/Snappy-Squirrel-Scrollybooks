@@ -8,8 +8,11 @@ const font = Playwrite_FR_Moderne({
 });
 
 export const metadata: Metadata = {
-  title: "Scrolly Snappy",
-  description: "Snappy Squirrel v2",
+  title: "Snappy Squirrel Scrollybooks",
+  description: "Snappy Squirrel Scrollybooks: Financial Literacy for Kids",
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
