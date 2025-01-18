@@ -14,7 +14,7 @@ export default function About() {
           width={600}
           height={600}
         />  
-      <p className="text-xl pt-5 leading-loose">Written as a series of stories by Jerry Looper, who built his career at McDonnell Douglas aircraft and put four children through college on a manager's salary, these books are a collaboration between a father and daughter. Jen Looper is a web developer and artist who understands the power that interactive media can have to tell stories.</p>
+      <p className="text-xl pt-5 leading-loose">Written as a series of stories by Jerry Looper, who built his career at McDonnell Douglas aircraft and put four children through college on a manager&rsquo;s salary, these books are a collaboration between a father and daughter. Jen Looper is a web developer and artist who understands the power that interactive media can have to tell stories.</p>
       <h2 className="text-2xl font-bold pt-6 mb-6">The art</h2>
       <p className="text-xl leading-loose">The illustrations in this book are a mixed-media project by Jen. First, she used a gelli plate to create mimeograph-style monoprints using acrylic paint and - when it works - image transfer from various recycled magazines and books. Then, she cuts up the paper to create the collage animals. Photographed in pieces and reassembled in Procreate on an iPad, extras can be added digitally. Below are some photos of the process. Rubber stampd and nature prints, all using repurposed materials, also add to the layers.</p>
       <Image
