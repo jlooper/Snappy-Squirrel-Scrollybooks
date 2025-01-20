@@ -71,7 +71,7 @@ export default function ScrollytellingComponent() {
           <div className="scroll-fixed hidden md:block">
             <div className="graphic-container">
               {story.map((story, index) => (
-                story.imageUrl && (
+                story.imageUrl && story.imageUrl.length > 0 && (
                   <div 
                     key={story.id}
                     className={`graphic-image ${index === 0 ? 'is-active' : ''}`} 
@@ -80,8 +80,7 @@ export default function ScrollytellingComponent() {
                     <Image
                       src={`/images/${story.imageUrl}`}
                       alt={story.header}
-                      width={800}
-                      height={600}
+                      fill
                       priority={index === 0}
                       className="object-cover"
                     />
@@ -118,7 +117,7 @@ export default function ScrollytellingComponent() {
                 className={`scroll-text bg-white text-black ${!story.imageUrl ? 'full-width' : ''}`}
               >
                 {/* Mobile image */}
-                {story.imageUrl && (
+                {story.imageUrl && story.imageUrl.length > 0 && (
                   <div className="md:hidden w-full h-[50vh] relative mb-6">
                     <Image
                       src={`/images/${story.imageUrl}`}

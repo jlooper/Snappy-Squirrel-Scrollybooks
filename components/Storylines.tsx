@@ -109,7 +109,7 @@ export const stories: Story[] = [
       id: 20,
       header: "Snappy Needs a Nest",
       content: "One morning, Snappy Squirrel looked out from under his flimsy shelter of leaves and twigs and saw that the ground was covered with white frost. Snowflakes gently drifted down from the sky and the ground felt hard and cold to the touch. Winter was coming, and Snappy knew that his small shelter was not warm enough or high enough to be safe from other animals and the cold winds. If he could buy a nest, he'd be much warmer and happier.  But nests are very expensive.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "1/6.png",
       funFact: "Why do you think Snappy’s flimsy shelter isn’t safe enough for the winter?",
     },
     {
@@ -119,7 +119,7 @@ export const stories: Story[] = [
       id: 21,
       header: "A consultation",
       content: "Snappy went to Auntie Pip's cozy nest made of finest oak leaves. He relaxed in the warmth and asked his Auntie how many nuts and seeds he would need to buy his own nest.  “You need to save as many nuts as you can gather,” said Auntie Pip. “Don’t eat them right when you find them, but eat one and save ten.”",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "If you got $10 for your allowance, do you think you could save $9 and only spend $1? Why or why not?",
     },
     {
@@ -129,7 +129,7 @@ export const stories: Story[] = [
       id: 22,
       header: "Earning interest",
       content: "Snappy already has stored many nuts with Owl’s Forest Bank and is earning interest on them when Owl gives him seeds in return for the nuts. But Auntie Pip says that he can save still more, “If you make a plan to only eat a small portion of the nuts you find and store the rest for the future, you will own more nuts, earn more interest, and you’ll be able to buy a nest soon. You must save for the future,” said Auntie, smiling and looking at the walls of her own snug nest.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "Why do you think saving money in a bank is a good idea instead of spending it all right away?",
     },
     {
@@ -139,7 +139,7 @@ export const stories: Story[] = [
       id: 23,
       header: "Enough interest?",
       content: "But Snappy knows that although Owl's Bank is safe place to store his valuables, he still only gets two small seeds for each nut that he deposits in the bank. Worried, he thinks that by getting only two seeds for each nut, it will take years to add up enough for pay for a nest. Snappy asks, \"Is there any place else I could put my nuts to earn more seeds, so that I can earn more seeds more quickly?\"",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "If you wanted to save up for something big, like a bike or a toy, would you look for a way to make your money grow faster? How?",
     },
     {
@@ -149,7 +149,7 @@ export const stories: Story[] = [
       id: 24,
       header: "Investing in a business",
       content: "Auntie Pip says he could use some of his nuts to buy part of the Deer Brothers’ Lawn Service.  They take care of lawns, like keeping the grass cut, pushing leaves off of the trails, and trampling down snow, but they need to buy some tools to make their business work better.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "What do you think would happen if a company didn’t have the tools or workers it needed to grow?",
     },
     {
@@ -159,7 +159,7 @@ export const stories: Story[] = [
       id: 25,
       header: "The Deer Brothers' Lawn Service",
       content: "The Deer Brothers are willing to sell a little part of their business to interested buyers. Giving the Brothers nuts now, or investing in their business, will help them grow their business by buying tools and hiring more workers, and will help them to give the investor bigger returns in the future.  Aunt Pip tells him, \"Why not buy a share of their business?\"",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "Would you want to own part of a company if it meant you could earn extra money each year? Why or why not?",
     },
     {
@@ -169,7 +169,7 @@ export const stories: Story[] = [
       id: 26,
       header: "Sharing a business",
       content: "Snappy thinks that sharing a business, especially one he doesn't run himself, sounds great. Auntie Pip provides more information, “These shares in the company are called 'common stocks' because anybody can buy them.\" A share of the Deer Brothers\' business is one nut of the business\'s profit. Snappy learns that he can buy a share of this company for only ten nuts.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "Would you prefer to run your own company or invest in someone else's?",
     },
     {
@@ -179,7 +179,7 @@ export const stories: Story[] = [
       id: 27,
       header: "Dividends",
       content: "Delighted, Snappy learns that every owner of the company gets a few seeds at the end of the year when the company is successful and has nuts left over after paying expenses and making sure the Brothers themselves are well paid.  These seeds are called a 'dividend' and the more of the company Snappy owns, the more dividends he gets as long as the company does good business. That sounds like a very nice arrangement to Snappy.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "If something you bought for $10 could be sold to someone else for $11, would you sell it? Why or why not?",
     },
     {
@@ -189,7 +189,7 @@ export const stories: Story[] = [
       id: 28,
       header: "Taxes",
       content: "Auntie Pip reminds him that Big Bear, who runs the whole forest and keeps everything in order, takes a little of the dividend each year, which he calls 'taxes'.  Snappy frowns a little when he hears this, but he understands that the Big Bear has expenses of his own like keeping the chipmunks in line and making sure that Skunk’s Perfume company doesn’t poison anyone. But Snappy is still relieved that he gets to keep most of the dividend.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "Do you think it\'s fair that we pay taxes to the government? What do you think the government uses that money for?",
     },
     {
@@ -199,7 +199,7 @@ export const stories: Story[] = [
       id: 29,
       header: "Making progress",
       content: "Several months pass. The Deer Brothers, with their new tools and hard workers, have a booming business trimming paths and getting the forest ready for Spring.  Snappy realizes that their Lawn Service company is making so much profit and paying out such regular dividends that each share in the company that he bought for ten nuts each is now selling for eleven nuts each.  Snappy could sell the shares that he bought for ten nuts to the other squirrels for eleven nuts, giving him one nut that he didn't have before and he didn't have to go out and find.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "Where can you find information about stock prices?",
     },
     {
@@ -209,7 +209,7 @@ export const stories: Story[] = [
       id: 210,
       header: "Active saving",
       content: "Of course, Big Bear who runs the Forest has to be paid part of the profit Snappy made from buying and selling, but Snappy still gets to keep most of it. Snappy is kept busy running back and forth between the Deer Brothers and Owl's Bank, storing more and more nuts and thinking of the beautiful nest that he will be able to buy very soon.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "",
       funFact: "If you owned part of a company, would you sell it now to get quick money or keep it to earn more later? Why?",
     },
     {
