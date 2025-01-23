@@ -109,7 +109,7 @@ export const stories: Story[] = [
       id: 20,
       header: "Snappy Needs a Nest",
       content: "One morning, Snappy Squirrel looked out from under his flimsy shelter of leaves and twigs and saw that the ground was covered with white frost. Snowflakes gently drifted down from the sky and the ground felt hard and cold to the touch. Winter was coming, and Snappy knew that his small shelter was not warm enough or high enough to be safe from other animals and the cold winds. If he could buy a nest, he'd be much warmer and happier.  But nests are very expensive.",
-      imageUrl: "1/6.png",
+      imageUrl: "2/0.png",
       funFact: "Why do you think Snappy’s flimsy shelter isn’t safe enough for the winter?",
     },
     {
