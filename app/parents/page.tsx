@@ -70,8 +70,11 @@ export default function Parents() {
       <p className="text-lg mt-5">5. Is your family looking for a larger (or smaller) home for the future?</p>
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 10: Snappy Plans for the Future</p>
-      
-      <p className="text-lg mt-5"></p>
+      <p className="text-lg mt-5">1. About how much of a family’s money should be kept in the bank for near-term use such as emergencies?</p>
+      <p className="text-lg mt-5">2. How can your family use the ‘duration’ of various investment types to allocate money to cash, stocks, bonds, etc.?</p>
+      <p className="text-lg mt-5">3. How much, if any, of your family’s retirement money will be in a fixed pension vs. from Social Security?</p>
+      <p className="text-lg mt-5">4. How can Snappy use the Sharpe Ratio to evaluate the prices of different mutual funds?</p>
+      <p className="text-lg mt-5">5. Is your family using a professional investment advisor? Why? or Why not?</p>
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 10</p>
       <hr className="m-10"/>
