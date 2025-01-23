@@ -219,7 +219,7 @@ export const stories: Story[] = [
       id: 30,
       header: "Snappy Plays the Stock Market",
       content: "Snappy was very pleased with his successful investment in the Deer Brothers’ Lawn Service. He had begun to make a name for himself amongst the other forest creatures as an up-and-coming young squirrel!",
-      imageUrl: "coming-soon.png",
+      imageUrl: "3/0.png",
       funFact: "fact context here",
     },
     {
