@@ -55,7 +55,7 @@ export default function Navigation() {
           <ul className="flex space-x-6 text-white ml-auto">
             <li className="text-right"><Link href="/about" className="hover:text-gray-200">About</Link></li>
             <li className="text-right"><Link href="/contact" className="hover:text-gray-200">Contact</Link></li>
-            <li className="text-right"><Link href="/parents" className="hover:text-gray-200">Parent Corner</Link></li>
+            <li className="text-right"><Link href="/parents" className="hover:text-gray-200">Parent and Teacher Corner</Link></li>
           </ul>
         </div>
       </div>
@@ -70,7 +70,7 @@ export default function Navigation() {
           {[
             { href: "/about", label: "About" },
             { href: "/contact", label: "Contact" },
-            { href: "/parents", label: "Parent Corner" },
+            { href: "/parents", label: "Parent and Teacher Corner" },
           ].map((link) => (
             <li key={link.href}>
               <Link
