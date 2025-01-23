@@ -34,34 +34,17 @@ export default function HomeComponent() {
         </h1>
         <h2 className="text-lg sm:text-xl md:text-2xl mx-6">
           Here, financial literacy is made simple and fun for kids of all ages. Click on a card and scroll the text area to learn!
-        </h2>
-        
-        {/* Hide slider controls on mobile */}
-        <div className="slider-container relative w-full py-4 sm:py-8">
-          <button 
-            onClick={slideLeft}
-            className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-green-800 text-white p-2 rounded-r-lg"
-          >
-            ←
-          </button>
-               
+        </h2> 
           <div 
-            ref={sliderRef}
-            className="cards-container 
-              flex flex-col sm:flex-row
-              sm:overflow-x-hidden sm:whitespace-nowrap 
-              px-4 sm:px-4
-              space-y-4 sm:space-y-0"
+            className="grid grid-cols-1 gap-8 md:grid-cols-5 m-4 md:px-6 mx-auto"
           >
-            
             {firstStoriesPerBook.map((story) => (
               <div 
                 key={story.id}
                 className={`card 
                   block sm:inline-block 
-                  w-full sm:w-72
-                  mb-4 sm:mb-0 
-                  mr-0 sm:mr-4 
+                  w-full md:w-60
+                  mb-4 sm:mb-0                
                   ${story.content ? 'bg-orange-400 hover:bg-orange-500 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}
                   rounded-lg 
                   shadow-lg 
@@ -107,13 +90,8 @@ export default function HomeComponent() {
             ))}
           </div>
        
-          <button 
-            onClick={slideRight}
-            className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-green-800 text-white p-2 rounded-l-lg"
-          >
-            →
-          </button>
-        </div>
+          
+       
       </div>
     </div>
   );
