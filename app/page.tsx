@@ -1,30 +1,10 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRef } from 'react';
 import { stories, getFirstStoryPerBook } from '@/components/Storylines';
 
 export default function HomeComponent() {
-  const sliderRef = useRef<HTMLDivElement>(null);
   const firstStoriesPerBook = getFirstStoryPerBook(stories);
-
-  const slideLeft = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({
-        left: -300,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  const slideRight = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({
-        left: 300,
-        behavior: 'smooth'
-      });
-    }
-  };
 
   return (
     <div className="page-wrapper">

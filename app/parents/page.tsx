@@ -17,10 +17,10 @@ export default function Parents() {
       <p className="text-lg mt-5">2. Where does your family save money for the future, such as a bank, or in stocks, or in bonds?</p>
       <p className="text-lg mt-5">3. What is a reasonable price to earnings ratio for stocks in good companies?</p>
       <p className="text-lg mt-5">4. How much dividends do good companies produce?</p>
-      <p className="text-lg mt-5">5. Why do some locations tax income at different rates than others?  Do you live in a ‘high tax’ state or a ‘low tax’ location?</p>
+      <p className="text-lg mt-5">5. Why do some locations tax income at different rates than others?  Do you live in a &quot;high tax&quot; state or a &quot;low tax&quot; location?</p>
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 3: Plays the Stock Market</p>
-      <p className="text-lg mt-5">1. Why would a potential stock buyer want to see the stock's history of sales, earnings growth, dividends, and valuation metrics like price to earnings ratio, price to sales ratio, etc?</p>
+      <p className="text-lg mt-5">1. Why would a potential stock buyer want to see the stock&apos;s history of sales, earnings growth, dividends, and valuation metrics like price to earnings ratio, price to sales ratio, etc?</p>
       <p className="text-lg mt-5">2. Why would smoothly increasing sales and earnings be better than more volatile metrics?</p>
       <p className="text-lg mt-5">3. What is the average price to earnings metric for the US stock market in the last five years?</p>
       <p className="text-lg mt-5">4. What is the market price to earnings valuation metric today?</p>
@@ -28,17 +28,17 @@ export default function Parents() {
 
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 4: Snappy Loses</p>
-      <p className="text-lg mt-5">1. Why are rapid changes in the price of a stock, called 'volatility', worrying to an investor?</p>
+      <p className="text-lg mt-5">1. Why are rapid changes in the price of a stock, called &quot;volatility&quot;, worrying to an investor?</p>
       <p className="text-lg mt-5">2. Who keeps the records of this rapid trading so that transaction costs and taxes can be paid?</p>
-      <p className="text-lg mt-5">3. Is 'day trading' useful when the market is going up? Going down?</p>
-      <p className="text-lg mt-5">4. Is there a way 'day trading' taxes can be minimized?</p>
-      <p className="text-lg mt-5">5. Is it better for an investor to 'day trade' using the internet or a 'full service broker'?</p> 
+      <p className="text-lg mt-5">3. Is &quot;day trading&quot; useful when the market is going up? Going down?</p>
+      <p className="text-lg mt-5">4. Is there a way &quot;day trading&quot; taxes can be minimized?</p>
+      <p className="text-lg mt-5">5. Is it better for an investor to &quot;day trade&quot; using the internet or a &quot;full service broker&quot;?</p> 
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 5: Snappy Buys a Bond</p>
-      <p className="text-lg mt-5">1. What is meant by 'default'?</p>
+      <p className="text-lg mt-5">1. What is meant by &quot;default&quot;?</p>
       <p className="text-lg mt-5">2. What are the differences among corporate bonds, Treasury bonds, zero coupon bonds, and municipal bonds, considering safety, return, and taxation?</p>
       <p className="text-lg mt-5">3. What is the difference between bond maturity date and bond duration?</p>
-      <p className="text-lg mt-5">4. Why does my bond decrease in price when gov't interest rates are raised?</p>
+      <p className="text-lg mt-5">4. Why does my bond decrease in price when government interest rates are raised?</p>
       <p className="text-lg mt-5">5. What is the difference between long bonds and short bonds and which is preferred when interest rates are being raised - and why?</p>
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 6: Snappy and the Mutual Fund</p>
@@ -51,11 +51,11 @@ export default function Parents() {
       <p className="text-xl font-bold mt-5">Book 7: Snappy and Inflation</p>
       <p className="text-lg mt-5">1. Does inflation increase or decrease the value of bonds that your family own?</p>
       <p className="text-lg mt-5">2. What does the government do to quell inflation?</p>
-      <p className="text-lg mt-5">3. Does inflation make your family’s home mortgage payment more or less valuable?</p>
+      <p className="text-lg mt-5">3. Does inflation make your family\&apos;s home mortgage payment more or less valuable?</p>
       <p className="text-lg mt-5">4. If your allowance goes up during inflation, but you have to spend the extra income to buy the same toy, are you better off with inflation, even though you have more money to spend?</p>
       <p className="text-lg mt-5">5. Does the price-to-earnings ratio of most stocks go up or down when inflation goes up?</p>
       <hr className="m-10"/>
-      <p className="text-xl font-bold mt-5">Book 8: Snappy's Business</p>
+      <p className="text-xl font-bold mt-5">Book 8: Snappy\&apos;s Business</p>
       <p className="text-lg mt-5">1. What makes the new collection system better than the old system?</p>
       <p className="text-lg mt-5">2. What inputs are required for a new business?</p>
       <p className="text-lg mt-5">3. What is the source of most capital for a business investment?</p>
@@ -70,13 +70,11 @@ export default function Parents() {
       <p className="text-lg mt-5">5. Is your family looking for a larger (or smaller) home for the future?</p>
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 10: Snappy Plans for the Future</p>
-      <p className="text-lg mt-5">1. About how much of a family’s money should be kept in the bank for near-term use such as emergencies?</p>
-      <p className="text-lg mt-5">2. How can your family use the ‘duration’ of various investment types to allocate money to cash, stocks, bonds, etc.?</p>
-      <p className="text-lg mt-5">3. How much, if any, of your family’s retirement money will be in a fixed pension vs. from Social Security?</p>
+      <p className="text-lg mt-5">1. About how much of a family\&apos;s money should be kept in the bank for near-term use such as emergencies?</p>
+      <p className="text-lg mt-5">2. How can your family use the &quot;duration&quot; of various investment types to allocate money to cash, stocks, bonds, etc.?</p>
+      <p className="text-lg mt-5">3. How much, if any, of your family\&apos;s retirement money will be in a fixed pension vs. from Social Security?</p>
       <p className="text-lg mt-5">4. How can Snappy use the Sharpe Ratio to evaluate the prices of different mutual funds?</p>
       <p className="text-lg mt-5">5. Is your family using a professional investment advisor? Why? or Why not?</p>
-      <hr className="m-10"/>
-      <p className="text-xl font-bold mt-5">Book 10</p>
       <hr className="m-10"/>
       </div>
     );
