@@ -51,11 +51,11 @@ export default function Parents() {
       <p className="text-xl font-bold mt-5">Book 7: Snappy and Inflation</p>
       <p className="text-lg mt-5">1. Does inflation increase or decrease the value of bonds that your family own?</p>
       <p className="text-lg mt-5">2. What does the government do to quell inflation?</p>
-      <p className="text-lg mt-5">3. Does inflation make your family\&apos;s home mortgage payment more or less valuable?</p>
+      <p className="text-lg mt-5">3. Does inflation make your family&apos;s home mortgage payment more or less valuable?</p>
       <p className="text-lg mt-5">4. If your allowance goes up during inflation, but you have to spend the extra income to buy the same toy, are you better off with inflation, even though you have more money to spend?</p>
       <p className="text-lg mt-5">5. Does the price-to-earnings ratio of most stocks go up or down when inflation goes up?</p>
       <hr className="m-10"/>
-      <p className="text-xl font-bold mt-5">Book 8: Snappy\&apos;s Business</p>
+      <p className="text-xl font-bold mt-5">Book 8: Snappy&apos;s Business</p>
       <p className="text-lg mt-5">1. What makes the new collection system better than the old system?</p>
       <p className="text-lg mt-5">2. What inputs are required for a new business?</p>
       <p className="text-lg mt-5">3. What is the source of most capital for a business investment?</p>
@@ -70,9 +70,9 @@ export default function Parents() {
       <p className="text-lg mt-5">5. Is your family looking for a larger (or smaller) home for the future?</p>
       <hr className="m-10"/>
       <p className="text-xl font-bold mt-5">Book 10: Snappy Plans for the Future</p>
-      <p className="text-lg mt-5">1. About how much of a family\&apos;s money should be kept in the bank for near-term use such as emergencies?</p>
+      <p className="text-lg mt-5">1. About how much of a family&apos;s money should be kept in the bank for near-term use such as emergencies?</p>
       <p className="text-lg mt-5">2. How can your family use the &quot;duration&quot; of various investment types to allocate money to cash, stocks, bonds, etc.?</p>
-      <p className="text-lg mt-5">3. How much, if any, of your family\&apos;s retirement money will be in a fixed pension vs. from Social Security?</p>
+      <p className="text-lg mt-5">3. How much, if any, of your family&apos;s retirement money will be in a fixed pension vs. from Social Security?</p>
       <p className="text-lg mt-5">4. How can Snappy use the Sharpe Ratio to evaluate the prices of different mutual funds?</p>
       <p className="text-lg mt-5">5. Is your family using a professional investment advisor? Why? or Why not?</p>
       <hr className="m-10"/>
