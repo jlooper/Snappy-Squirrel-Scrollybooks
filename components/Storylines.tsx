@@ -519,7 +519,7 @@ export const stories: Story[] = [
       id: 60,
       header: "Snappy and the Mutual Fund",
       content: "Snappy has learned that the price of the shares of one company can rise and fall, but thinks that if business is good in the forest, most stock prices should go up.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "6/0.png",
       funFact: "fact context here",
     },
     {
