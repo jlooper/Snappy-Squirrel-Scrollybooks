@@ -220,7 +220,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "Snappy was very pleased with his successful investment in the Deer Brothers’ Lawn Service. He had begun to make a name for himself amongst the other forest creatures as an up-and-coming young squirrel!",
       imageUrl: "3/0.png",
-      funFact: "fact context here",
+      funFact: "How can making smart financial decisions impact your reputation and opportunities for the future?",
     },
     {
       book: 3,
@@ -230,7 +230,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "Thinking that there might be other companies with as good profits as those earned by the Deer Brothers, he decided to consult with Auntie Pip about other opportunities in the forest.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to explore multiple opportunities before making an investment?",
     },
     {
       book: 3,
@@ -238,9 +238,9 @@ export const stories: Story[] = [
       tagline: "Snappy loses some and wins some",
       id: 32,
       header: "Snappy Plays the Stock Market",
-      content: "Aunt Pip recommended that he should look into investing in companies with increasing sales over the last few years. Rabbit’s Clean Water Company, for example, had made a very good profit last year and Skunk’s Perfume Company was slowly earning a little more each year, as his perfumes became more popular.",
+      content: "Auntie Pip recommended that he should look into investing in companies with increasing sales over the last few years. Rabbit’s Clean Water Company, for example, had made a very good profit last year and Skunk’s Perfume Company was slowly earning a little more each year, as his perfumes became more popular.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why do investors look for companies that show steady growth over time?",
     },
     {
       book: 3,
@@ -250,7 +250,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "Snappy wasn’t sure, however, in which company to invest.  He didn’t know much about perfumes and was a little concerned that Skunk was a somewhat unsavory character. Rabbit’s company was doing pretty well, but Snappy didn’t quite understand how the water was made cleaner by Rabbit’s special process.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is understanding a company’s business and values important when deciding where to invest?",
     },
     {
       book: 3,
@@ -260,7 +260,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "“Don’t invest in a company just because you like its product or its founder,” recommended Auntie Pip. “Let’s look at companies that make more profit each year and that pay back some nuts, or ‘dividends’, to its investors each year. And we should look at companies that don’t cost too many nuts to buy their stocks.”",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to focus on financial facts, like profits and dividends, instead of personal preferences when investing?",
     },
     {
       book: 3,
@@ -270,7 +270,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "So Snappy started doing some research. The Deer Brothers’ Lawn Service had increased profits, called earnings, each year for three years and paid dividends each year, but now it cost twenty nuts to buy a stock. That seemed too expensive to Snappy.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can the price of a stock affect whether it’s a good investment or not?",
     },
     {
       book: 3,
@@ -280,7 +280,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "Auntie asked if the Lawn Service company was likely to increase sales enough next year to justify the high price, but Snappy thought they were already working on as many lawns as they could take care of.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why should investors think about a company’s future growth potential before buying its stock?",
     },
     {
       book: 3,
@@ -290,7 +290,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "Rabbit's Clean water had earned profits last year, but not the two earlier years, so Snappy decided not to buy them either.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it better to invest in companies that have a consistent track record of profits?",
     },
     {
       book: 3,
@@ -300,7 +300,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "Skunk's Perfumes had smooth earnings growth and regular dividends, and only cost ten nuts worth of stocks for one nut of profit paid out in dividends, so Snappy decided to buy some of that company.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why do investors prefer companies with steady growth, regular dividends, and affordable stock prices?",
     },
     {
       book: 3,
@@ -310,7 +310,7 @@ export const stories: Story[] = [
       header: "Snappy Plays the Stock Market",
       content: "Both Skunk and Snappy were happy. Skunk was happy to have more capital to create more interesting perfume combinations, and Snappy was happy to invest in a profitable enterprise. Even though he thought the perfumes smelled terrible, Snappy was pleased with his investment and its earnings.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can focusing on financial performance, rather than personal opinions, lead to smart investment decisions?",
     },
     {
       book: 4,
@@ -320,7 +320,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Snappy is enthusiastic about his shares in Skunk’s Perfume Company, and is starting to appreciate the varied scents that Skunk produces. Once you get used to them, they aren’t so bad!",
       imageUrl: "4/0.png",
-      funFact: "fact context here",
+      funFact: "Why might it be a good idea to keep an open mind about your investments, even if they’re not what you expected at first?",
     },
     {
       book: 4,
@@ -330,7 +330,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Snappy noticed that Owl installed a sign above his bank’s door that displays the stock prices of the various forest businesses. A group of field mice are kept busy changing the sign frequently as the stocks’ value goes up and down.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why do stock prices change so often, and what does this tell us about the stock market?",
     },
     {
       book: 4,
@@ -340,7 +340,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Noticing the stock price for Skunk’s Perfume Company listed as going up, Snappy thinks that maybe he should sell some of his shares in the company and take a profit from this price increase.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might selling a stock when its price is high be a good way to make a profit?",
     },
     {
       book: 4,
@@ -350,7 +350,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Once he sees how much profit he made from selling the shares, he realizes how fun it is to get more nuts without working for them.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can investing help you earn money without needing to work for it directly?",
     },
     {
       book: 4,
@@ -360,7 +360,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Then, Snappy notices that the price of shares has gone down, so he decides to buy more shares. A few days later, he sees that the price has gone up again, so he sells again and gets more profits. What fun this is!",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What is the advantage of buying stocks when their prices are low and selling them when their prices are high?",
     },
     {
       book: 4,
@@ -370,7 +370,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Snappy begins to watch the stock ticker sign all day, and buys and sells as the price moves down and up.  But one day the stock price drops and doesn't come back up at all.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What are the risks of focusing only on short-term stock price changes?",
     },
     {
       book: 4,
@@ -380,7 +380,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Snappy realizes that trading all day, called “day trading”, of course, only works when the market is going up.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might relying on day trading be risky if the market doesn’t always go up?",
     },
     {
       book: 4,
@@ -390,7 +390,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Then Snappy is told by Owl that he must pay a few seeds to Owl each time he buys or sells a stock.  This is called a “trading commission” and he learns that a substantial part of his profits actually goes to pay the commission.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How do trading commissions reduce the profits you make from frequent buying and selling of stocks?",
     },
     {
       book: 4,
@@ -400,7 +400,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Snappy is discouraged at seeing almost all his profits lost by paying this commission. He is upset at himself for having spent so much time concentrating on one stock’s ups and downs.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to consider the costs and time involved in managing your investments?",
     },
     {
       book: 4,
@@ -410,7 +410,7 @@ export const stories: Story[] = [
       header: "Snappy Loses",
       content: "Maybe it would be smarter not to spend all his time and nuts buying just one stock.  Maybe he should look at a combination of stocks.",      
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might it be safer to invest in a mix of different stocks instead of focusing on just one?",
     },
     {
       book: 5,
@@ -420,7 +420,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Snappy has learned that profiting from quickly buying and selling stocks is not a good business plan.  In fact, he lost a lot of money in his last ‘day trading’ adventure!",
       imageUrl: "coming-soon.png",
-      funFact: "fact context here",
+      funFact: "Why is it important to avoid risky strategies like day trading if you want to protect your money?",
     },
     {
       book: 5,
@@ -430,7 +430,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "A talkative blue jay told him that Bear, who runs the forest, was running out of revenue which he normally got from taxes paid by the forest business people and homeowners. He wanted to borrow some money from the forest citizens and promised to pay it back with interest.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might governments or leaders borrow money from citizens, and how does paying interest encourage people to lend?",
     },
     {
       book: 5,
@@ -440,7 +440,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Snappy wanted a safer, more regular income and was willing to lend some money to Bear. Or perhaps he could find another company that offers a similarly safe investment. Which should he choose?",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might someone prefer a safer investment, even if it doesn’t earn as much money as riskier options?",
     },
     {
       book: 5,
@@ -450,7 +450,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Lending to someone else is called 'buying a bond' from them because they are required to pay it back. For each nut Snappy lent, the business or Bear must pay a few seeds, called ‘interest’, and eventually return a nut to Snappy.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does lending money through bonds work, and why do lenders earn interest?",
     },
     {
       book: 5,
@@ -460,7 +460,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Bonds from a business, Snappy learned, are called ‘corporate bonds.’ Bonds from Bear are called ‘Treasury Bonds’.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What’s the difference between corporate bonds and treasury bonds, and why might people choose one over the other?",
     },
     {
       book: 5,
@@ -470,7 +470,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Snappy could get a consistent payout of seeds from this type of lending. Bear will pay either a few seeds per month, or Snappy could wait until the end of the year to collect, and get a larger payout of seeds.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might some people prefer to receive smaller, regular payments instead of waiting for a larger payment at the end of the year?",
     },
     {
       book: 5,
@@ -480,7 +480,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Other businesses in the forest paid seeds for bonds as well. For example, Mrs. Mole owned an underground storage business that never made much money, but is a safe investment and has never had problems. Mrs. Mole wanted to expand her storage area, and offered Corporate Bonds - for one acorn, she will pay two sesame seeds and return the acorn at the end of the year.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might investing in a business with a steady but small profit still be a good choice for some people?",
     },
     {
       book: 5,
@@ -490,7 +490,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Bear encouraged the business owners in the forest to offer bonds and citizens to buy them, so he does not collect taxes on this transaction.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does offering bonds benefit both businesses and citizens, and why might it be tax-free?",
     },
     {
       book: 5,
@@ -500,7 +500,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Bear himself needed to start a major construction of a bridge over a creek, and offered Treasury Bonds to pay the Beaver engineers to construct it. He will give three sesame seeds for an acorn if he is allowed to keep the acorn an entire year.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How do government projects like bridges benefit from bonds, and why might they offer higher interest to attract investors?",
     },
     {
       book: 5,
@@ -510,7 +510,7 @@ export const stories: Story[] = [
       header: "Snappy Buys a Bond",
       content: "Snappy decided that he will buy some Treasury Bonds from Bear as it was a very safe investment. Bear was powerful enough to get all the nuts and seeds he needed, so Snappy trusted him to honor the agreement. Big Bear will not ‘default’ on the year-end payment, so Snappy knows he is lending wisely.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to trust that the borrower can pay back the money before you invest in bonds?",
     },
     {
       book: 6,
@@ -520,7 +520,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "Snappy has learned that the price of the shares of one company can rise and fall, but thinks that if business is good in the forest, most stock prices should go up.",
       imageUrl: "6/0.png",
-      funFact: "fact context here",
+      funFact: "Why might the overall economy affect the performance of most companies in the stock market?",
     },
     {
       book: 6,
@@ -530,7 +530,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "He talked to Owl, owner of Owl’s Bank, and learned that he could buy a share in several companies at once.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does investing in multiple companies at once reduce the risk of losing money?",
     },
     {
       book: 6,
@@ -540,7 +540,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "Owl had bought some of almost every stock available in the forest and created a pool of these shares.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What is the benefit of pooling stocks from different companies into one investment?",
     },
     {
       book: 6,
@@ -550,7 +550,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "Owl offered to sell Snappy a share in the whole pool, which Owl called a ‘Mutual Fund’.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What is a mutual fund, and why might it be a good choice for beginner investors?",
     },
     {
       book: 6,
@@ -560,7 +560,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "Owl explained that even if the profit from the whole fund is less than the profit from one well-performing stock, there is less chance that the fund price will go down due to a stock’s sales going down.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it sometimes better to aim for consistent, steady returns instead of higher, riskier profits?",
     },
     {
       book: 6,
@@ -570,7 +570,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "Owl explained a bit more. There are funds representing the whole market, that is, every company in the forest. These are called ‘index funds’ because they include a complete listing, or ‘index’, of the market.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What are index funds, and how do they reflect the overall performance of the market?",
     },
     {
       book: 6,
@@ -580,7 +580,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "Another type of fund represents only some types of companies. For example, the ‘Engineering Sector’ of funds included Beaver’s Dam-building Company and Otter’s Mudslide Play-Spaces.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How do sector-specific funds focus on certain industries, and why might someone choose to invest in them?",
     },
     {
       book: 6,
@@ -590,7 +590,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "The ‘Excavation Sector’ type of funds included Mrs. Mole’s Underground Storage company, Earthworm’s Casing Casting Company, and Gopher’s Lawn-Aeration Co-op.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What are the risks and benefits of investing in a specific sector instead of the whole market?",
     },
     {
       book: 6,
@@ -600,7 +600,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "These specialty funds, while appealing, seemed a little more specialized than an index fund. Which one should Snappy buy?",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might a more diversified option, like an index fund, be safer than a specialized fund?",
     },
     {
       book: 6,
@@ -610,7 +610,7 @@ export const stories: Story[] = [
       header: "Snappy and the Mutual Fund",
       content: "Snappy was willing to accept a little less profit to reduce the chance of a loss, and decided to buy some of Owl’s Index Mutual Fund.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is reducing the risk of loss an important factor in deciding where to invest your money?",
     },
     {
       book: 7,
@@ -620,7 +620,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Snappy had been really busy during the Fall season. He had gathered lots of acorns and had stored them safely in Owl’s Bank.",
       imageUrl: "coming-soon.png",
-      funFact: "fact context here",
+      funFact: "Why is it important to save resources or money for future needs?",
     },
     {
       book: 7,
@@ -630,7 +630,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "But Snappy had hunted everywhere for his favorite pine cones with tasty pine nuts inside without finding many for winter.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does scarcity of certain goods affect their value in the market?",
     },
     {
       book: 7,
@@ -640,7 +640,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Last year, he could trade five acorns for a big pine cone, but this year, there were so many acorns on the ground that every animal had plenty.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might an abundance of something make it less valuable in trade?",
     },
     {
       book: 7,
@@ -650,7 +650,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Some greedy chipmunks quickly started offering six acorns for one pine cone.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does competition among buyers drive prices higher in the market?",
     },
     {
       book: 7,
@@ -660,7 +660,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Soon the animals who had pine cones wouldn’t sell for fewer than six or even seven acorns.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why do sellers increase their prices when demand for an item is high and supply is limited?",
     },
     {
       book: 7,
@@ -670,7 +670,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Snappy was discouraged by this trend, because next year there might not be as many acorns on the ground. If he traded too many this year, he would have to work harder next year to replenish his stores.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to plan for the future when deciding how much to spend or trade today?",
     },
     {
       book: 7,
@@ -680,7 +680,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Even worse, he had many acorns collected and was ready to trade them for the pine cones he craved, but the price of pine cones was going up and up.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does inflation make it harder for people to buy the things they want, even if they’ve saved money?",
     },
     {
       book: 7,
@@ -690,7 +690,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Snappy was worried that he would either go hungry this winter or learn how to eat acorns, which he didn’t much like.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might inflation force people to make difficult choices about what they can afford?",
     },
     {
       book: 7,
@@ -700,7 +700,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "Snappy now understood that when everyone has lots of acorns, the major forest currency, each acorn can buy or be traded for less than before.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does inflation reduce the value of money or resources when there’s too much of it in circulation?",
     },
     {
       book: 7,
@@ -710,7 +710,7 @@ export const stories: Story[] = [
       header: "Snappy and Inflation",
       content: "This is called ‘inflation’ and is a drag on an economy or marketplace.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is inflation considered harmful to an economy, and how does it affect buyers and sellers?",
     },
     {
       book: 8,
@@ -720,7 +720,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "Snappy figured out a clever way to collect nuts faster than searching for them on the ground. He put little buckets on the ground under the oak trees and let the acorns fall into them from the tree. Then he simply emptied the buckets to collect the nuts.",
       imageUrl: "coming-soon.png",
-      funFact: "fact context here",
+      funFact: "Why is it important to come up with an efficient system when running a business?",
     },
     {
       book: 8,
@@ -730,7 +730,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "Snappy decided that this system would be valuable to other squirrels so he arranged to sell the buckets to his friends. He called his business “Snappy Bucket Solutions” (SBS).",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can identifying a need or problem in the market lead to a successful business idea?",
     },
     {
       book: 8,
@@ -740,7 +740,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "Since his business had a high ‘overhead’ cost - Snappy must buy the buckets from Duck’s Bucketworks and he must pay for advertising by the Jay News Service, the service was sold at a relatively high price.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What is overhead, and why does it increase the cost of running a business?",
     },
     {
       book: 8,
@@ -750,7 +750,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "In addition, Snappy had to buy a business license from Bear and pay tax on his profits. This was part of the cost of doing business in the forest.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important for businesses to pay taxes and obtain licenses, and what benefits do these steps provide to society?",
     },
     {
       book: 8,
@@ -760,7 +760,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "Furthermore, Snappy found that raccoon thieves tried to steal the buckets if he wasn’t watching, so he had to hire armed porcupines as guards.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does hiring security or taking protective measures increase a business’s costs?",
     },
     {
       book: 8,
@@ -770,7 +770,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "All these precautions cost money. Snappy was glad that he saved so many acorns and invested them wisely. Still, he realized that he needed to take out a loan, or borrow, from Owl’s Bank to fund the first purchase of buckets for resale.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why might a business need to take out a loan, and how can loans help a business grow?",
     },
     {
       book: 8,
@@ -780,7 +780,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "Snappy calculated that his business’s profits would justify the cost of the loan from Owl, who charged fees for the ability to borrow from the bank.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important for a business to calculate whether it can repay a loan before borrowing money?",
     },
     {
       book: 8,
@@ -790,7 +790,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "No sooner had Snappy signed the papers to get the loan, he learned that the chipmunk clan had opened a business very similar to SBS. The Chipmunk’s Bucket Solution system, or CBS, was made of paper sacks and cost less than SBS’s sturdy buckets.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How does competition affect a business, and why might a new competitor lower prices or offer different products?",
     },
     {
       book: 8,
@@ -800,7 +800,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "Snappy was very upset by this competition. He released an ad that explained how his solution was better than the Chipmunks’ and lowered his prices a little, but his sales began to decline. What to do?",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What strategies can businesses use to handle competition, and why is it important to stay flexible?",
     },
     {
       book: 8,
@@ -810,7 +810,7 @@ export const stories: Story[] = [
       header: "Snappy's Business",
       content: "Finally, Snappy sat down with the Chipmunks. After long talks with the greedy clan, the two parties came to a good solution: Snappy would buy the Chipmunks’ business. Everyone was happy - the Chipmunks were wealthy and Snappy owned the entire nut collection sector of business in the forest.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can buying out a competitor be a good solution to competition, and what are the benefits for both parties?",
     },
     {
       book: 9,
@@ -820,7 +820,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "Snappy was a prosperous squirrel now, with a successful business providing nut-collecting solutions to the forest citizens and  a solid investment portfolio. Finally he could start looking for a new place to live!",
       imageUrl: "coming-soon.png",
-      funFact: "fact context here",
+      funFact: "How can having a successful business and investments help provide financial security and open up new opportunities?",
     },
     {
       book: 9,
@@ -830,7 +830,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "At first, he thought it would be cheaper to rent, rather than buy his own nest. But when he looked around his neighborhood, the only nests for rent cost more in monthly rental money than he thought was reasonable.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What are the pros and cons of renting versus buying a home, and how can renting sometimes end up being more expensive in the long run?",
     },
     {
       book: 9,
@@ -840,7 +840,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "Snappy decided to consult Weasel’s Real Estate company to see a choice of nests to buy. Weasel was happy to show him what was available.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can consulting with a professional help when making an important financial decision like buying a home?",
     },
     {
       book: 9,
@@ -850,7 +850,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "The first nest Weasel showed Snappy was very fancy, very large and high in a big elm tree with great views. But it cost more nuts than Snappy had.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to live within your budget when making large purchases, such as buying a home?",
     },
     {
       book: 9,
@@ -860,7 +860,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "Weasel assured Snappy that he could borrow most of the cost of the nest and that he wouldn’t have to pay for the whole nest all at once. Weasel could even loan Snappy most of the money.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What are the benefits and risks of borrowing money (taking out a loan) when buying a big purchase like a home?",
     },
     {
       book: 9,
@@ -870,7 +870,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "Snappy knew, however, that Weasel charged many nuts as payment for the loan and that he would have to work very hard next year to pay back Weasel due to the high rate of interest he charged. Snappy thought this nest was too expensive for his budget and asked to see something else.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can interest on a loan increase the total cost of purchasing something, and why is it important to consider the long-term costs before borrowing money?",
     },
     {
       book: 9,
@@ -880,7 +880,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "The next nest Weasel showed Snappy was a run-down, small nest only a few feet off the ground. “You can fix it up in no time!” said Weasel, “and it’s very cheap!” Snappy didn’t want to spend a lot of time and money on a fixer-upper nest, so he said, “No, thanks.”",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to consider not just the upfront cost of a home, but also the potential cost of repairs and maintenance?",
     },
     {
       book: 9,
@@ -890,7 +890,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "Finally, Weasel showed Snappy the perfect nest. It was medium sized, halfway up an oak tree. It was big enough and had acorns right on the tree for Snappy to gather and invest. Snappy happily said, “I’ll take it!”",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can buying a home that meets your needs and fits your budget provide stability and peace of mind?",
     },
     {
       book: 9,
@@ -900,7 +900,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "Buying property was a serious step for Snappy. He had to sign many papers. He had to agree to pay for the nest and any repairs it might need if damaged or even blown out of the tree in a storm. This is called ‘insurance.’",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to have insurance to protect your home and other valuable assets from unexpected damage or loss?",
     },
     {
       book: 9,
@@ -910,7 +910,7 @@ export const stories: Story[] = [
       header: "Snappy Buys His Nest",
       content: "Finally, he was ready to move in! His new neighbors, Robin and a family of Cardinals, brought him housewarming presents. His Auntie Pip brought him a big cake which he shared with his neighbors. Finally, Snappy has a home!",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can buying a home lead to new opportunities and a sense of stability for the future?",
     },
     {
       book: 10,
@@ -920,7 +920,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "Inside his cozy new nest, Snappy leaned back and thought about his plans for the future. His finances were well-managed now.",
       imageUrl: "coming-soon.png",
-      funFact: "fact context here",
+      funFact: "How can managing your finances effectively help you feel more secure and confident about the future?",
     },
     {
       book: 10,
@@ -930,7 +930,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "He had some of his property safe in Owl’s Bank, earning steady interest.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What is interest, and how can earning interest on savings help grow your money over time?",
     },
     {
       book: 10,
@@ -940,7 +940,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "He had a little of his property invested in individual companies, including Skunk’s Perfumes and the Deer Brothers’ Lawn Service. The stock he had bought in these companies returned dividends regularly.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What are dividends, and how can investing in stocks that pay dividends provide a regular income?",
     },
     {
       book: 10,
@@ -950,7 +950,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "More of his income was invested in the mutual funds created by Owl: a general index fund that included many of the forest businesses and a fund from the Engineering Sector that included Beaver’s and Mole’s businesses.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What is a mutual fund, and how does it allow you to invest in multiple companies at once to reduce risk?",
     },
     {
       book: 10,
@@ -960,7 +960,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "To balance these riskier investments, Snappy also had bought bonds from Bear which were very safe and guaranteed to return some dividends.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "What are bonds, and why are they considered a safer investment compared to stocks?",
     },
     {
       book: 10,
@@ -970,7 +970,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "Now a homeowner and entrepreneur with a solid investment portfolio, Snappy started to think about his future expenses and how to budget for them.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to plan and budget for future expenses, especially for things like family, education, and retirement?",
     },
     {
       book: 10,
@@ -980,7 +980,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "Maybe he might meet a nice squirrel lady, get married, and have a family. Educating young squirrels was expensive. While a family is young, he should invest in more aggressive mutual funds and stocks to build his savings quickly.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can life changes, like starting a family, affect your financial goals, and why might you want to invest more aggressively when you are young?",
     },
     {
       book: 10,
@@ -990,7 +990,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "Then, later on, he might want to buy a small nest in the warmer South, sell his business, and retire. Once he no longer earned an income, he could reorganize his portfolio to include less risky investments.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can your investment strategy change as you approach retirement, and why is it important to shift to safer investments as you get older?",
     },
     {
       book: 10,
@@ -1000,7 +1000,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "For the time being, Snappy will keep investing aggressively while he is young. He will mostly invest in mutual funds and a few individual stocks and buy more bonds as he got older.",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "Why is it important to adjust your investment approach over time based on your age, income, and risk tolerance?",
     },
     {
       book: 10,
@@ -1010,7 +1010,7 @@ export const stories: Story[] = [
       header: "Snappy Plans for the Future",
       content: "But for now, Snappy was thrilled to be a business owner and homeowner with a solid financial outlook for the future!",
       imageUrl: "",
-      funFact: "fact context here",
+      funFact: "How can achieving financial stability through smart investments and managing your business help you feel secure and excited about the future?",
     }
 
   ];
