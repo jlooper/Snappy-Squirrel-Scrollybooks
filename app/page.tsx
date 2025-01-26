@@ -15,9 +15,10 @@ export default function HomeComponent() {
         <h2 className="text-lg sm:text-xl md:text-2xl mx-6">
           Here, financial literacy is made simple and fun for kids of all ages. Click on a card and scroll the text area to learn!
         </h2> 
-          <div 
-            className="grid grid-cols-1 gap-8 md:grid-cols-5 m-4 md:px-6 mx-auto"
+        <div 
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 m-4 md:px-6 mx-auto"
           >
+
             {firstStoriesPerBook.map((story) => (
               <div 
                 key={story.id}

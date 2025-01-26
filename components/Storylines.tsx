@@ -319,7 +319,7 @@ export const stories: Story[] = [
       id: 40,
       header: "Snappy Loses",
       content: "Snappy is enthusiastic about his shares in Skunk’s Perfume Company, and is starting to appreciate the varied scents that Skunk produces. Once you get used to them, they aren’t so bad!",
-      imageUrl: "coming-soon.png",
+      imageUrl: "4/0.png",
       funFact: "fact context here",
     },
     {
