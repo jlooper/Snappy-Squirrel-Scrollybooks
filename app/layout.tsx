@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playwrite_FR_Moderne } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const font = Playwrite_FR_Moderne({
   variable: "--font"
@@ -28,6 +29,7 @@ export default function RootLayout({
             <Navigation />
           </header>
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
