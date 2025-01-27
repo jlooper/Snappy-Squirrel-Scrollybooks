@@ -419,7 +419,7 @@ export const stories: Story[] = [
       id: 50,
       header: "Snappy Buys a Bond",
       content: "Snappy has learned that profiting from quickly buying and selling stocks is not a good business plan.  In fact, he lost a lot of money in his last ‘day trading’ adventure!",
-      imageUrl: "coming-soon.png",
+      imageUrl: "5/0.png",
       funFact: "Why is it important to avoid risky strategies like day trading if you want to protect your money?",
     },
     {
