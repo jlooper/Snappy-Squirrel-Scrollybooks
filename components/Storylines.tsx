@@ -719,7 +719,7 @@ export const stories: Story[] = [
       id: 80,
       header: "Snappy's Business",
       content: "Snappy figured out a clever way to collect nuts faster than searching for them on the ground. He put little buckets on the ground under the oak trees and let the acorns fall into them from the tree. Then he simply emptied the buckets to collect the nuts.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "8/0.png",
       funFact: "Why is it important to come up with an efficient system when running a business?",
     },
     {
