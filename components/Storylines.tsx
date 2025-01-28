@@ -619,7 +619,7 @@ export const stories: Story[] = [
       id: 70,
       header: "Snappy and Inflation",
       content: "Snappy had been really busy during the Fall season. He had gathered lots of acorns and had stored them safely in Owl’s Bank.",
-      imageUrl: "coming-soon.png",
+      imageUrl: "7/0.png",
       funFact: "Why is it important to save resources or money for future needs?",
     },
     {
