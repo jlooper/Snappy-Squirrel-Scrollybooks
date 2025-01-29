@@ -819,7 +819,7 @@ export const stories: Story[] = [
       id: 90,
       header: "Snappy Buys His Nest",
       content: "Snappy was a prosperous squirrel now, with a successful business providing nut-collecting solutions to the forest citizens and  a solid investment portfolio. Finally he could start looking for a new place to live!",
-      imageUrl: "coming-soon.png",
+      imageUrl: "9/0.png",
       funFact: "How can having a successful business and investments help provide financial security and open up new opportunities?",
     },
     {
