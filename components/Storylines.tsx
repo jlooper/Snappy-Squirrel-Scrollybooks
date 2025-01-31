@@ -788,7 +788,7 @@ export const stories: Story[] = [
       tagline: "An innovation!",
       id: 87,
       header: "Snappy's Business",
-      content: "No sooner had Snappy signed the papers to get the loan, he learned that the chipmunk clan had opened a business very similar to SBS. The Chipmunk’s Bucket Solution system, or CBS, was made of paper sacks and cost less than SBS’s sturdy buckets.",
+      content: "No sooner had Snappy signed the papers to get the loan, he learned that the chipmunk clan had opened a business very similar to SBS. The Chipmunk’s Bag Solution system, or CBS, was made of paper sacks and cost less than SBS’s sturdy buckets.",
       imageUrl: "",
       funFact: "How does competition affect a business, and why might a new competitor lower prices or offer different products?",
     },
